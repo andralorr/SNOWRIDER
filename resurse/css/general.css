@@ -1,0 +1,119 @@
+html {
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+}
+
+body{
+    margin: auto;
+    --padding-pagina:50px;
+    --border-radius:10px;
+}
+
+#grid {
+    display: grid;
+    grid-template-areas: "acasa acasa acasa"
+                        "desprenoi desprenoi digitalcoach"
+                        "magazin magazin magazin"
+                        "faq contact contact"
+                        "meteo meteo meteo";
+    gap: 15px;
+    width: 100%;
+    margin: auto;
+}
+
+#grid img, iframe, embed {
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    border-radius: var(--border-radius);
+    margin: auto;
+    object-fit: contain;
+}
+
+#grid > * {
+    outline: 1px solid;
+    padding: 20px;
+    text-align: left;
+    justify-content: center;
+    border-radius: var(--border-radius);
+    box-shadow:2px 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 5px;
+}
+
+#acasa {
+    grid-area: acasa;
+}
+
+#desprenoi {
+    grid-area: desprenoi;
+}
+
+#magazin {
+    grid-area: magazin;
+}
+
+#contact {
+    grid-area: contact;
+}
+
+#meteo {
+    grid-area: meteo;
+}
+
+#faq {
+    grid-area: faq;
+}
+
+main {
+    padding-left: var(--padding-pagina);
+    padding-right: var(--padding-pagina);
+}
+
+@media screen and (max-width:1200px){
+    #grid {
+        gap: 8px;
+    }
+    body{
+        --padding-pagina:30px;
+    }
+
+    html{
+        font-size: 16px;
+    }
+
+    img {
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width:800px){
+    #grid {
+        display: block;
+        gap: 10px;
+    }
+    body{
+        --padding-pagina:20px;
+    }
+
+    html{
+        font-size: 14px;
+    }
+
+    img {
+        margin-top: 80px;
+        margin-bottom: 50px;
+    }
+}
+
+h2 {
+    color: #0097b2;
+    font-size: 1.6rem;
+}
+
+.slogan {
+    color: #0097b2;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: left;
+}
