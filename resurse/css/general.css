@@ -71,7 +71,7 @@ main {
 
 @media screen and (max-width:1200px){
     #grid {
-        gap: 8px;
+        gap: 10px;
     }
     body{
         --padding-pagina:30px;
@@ -90,7 +90,7 @@ main {
 @media screen and (max-width:800px){
     #grid {
         display: block;
-        gap: 10px;
+        gap: 8px;
     }
     body{
         --padding-pagina:20px;
