@@ -1,21 +1,25 @@
 html {
     font-family: 'Oswald', sans-serif;
-    font-size: 18px;
+    font-size: 18px; 
+    transition: font-size 0.5s ease-in-out;
 }
 
 body{
     margin: auto;
     --padding-pagina:50px;
     --border-radius:10px;
+    transition: --padding-pagina 0.5s ease-in-out;
 }
 
 #grid {
     display: grid;
-    grid-template-areas: "acasa acasa acasa"
-                        "desprenoi desprenoi digitalcoach"
-                        "magazin magazin magazin"
-                        "faq contact contact"
-                        "meteo meteo meteo";
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:"cover cover cover"
+                        "magazin  acasa faq"
+                        "magazin desprenoi calendar"
+                        "meteo desprenoi digitalcoach"
+                        "contact contact formula";
     gap: 15px;
     width: 100%;
     margin: auto;
@@ -26,8 +30,9 @@ body{
     width: 100%;
     max-width: 700px;
     border-radius: var(--border-radius);
-    margin: auto;
+    margin: 5px;
     object-fit: contain;
+    transition: padding 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
 }
 
 #grid > * {
@@ -36,8 +41,13 @@ body{
     text-align: left;
     justify-content: center;
     border-radius: var(--border-radius);
-    box-shadow:2px 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow:2px 4px 10px var(--darkgray);
     margin: 5px;
+    transition: padding 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+#cover {
+    grid-area: cover;
 }
 
 #acasa {
@@ -64,15 +74,184 @@ body{
     grid-area: faq;
 }
 
+#calendar {
+    grid-area: calendar;
+}
+
+#digitalcoach {
+    grid-area: digitalcoach;
+}
+
+#formula {
+    grid-area: formula;
+}
+
 main {
     padding-left: var(--padding-pagina);
     padding-right: var(--padding-pagina);
+    transition: padding 0.5s ease-in-out;
 }
+
+.cover picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    top: -70px;
+    z-index: -1;
+}
+
+h2 {
+    color: var(--primary-blue);
+    font-size: 1.3rem;
+    transition: font-size 0.5s ease-in-out;
+}
+
+h3 {
+    color: var(--lightblue);
+    transition: font-size 0.5s ease-in-out;
+}
+
+.slogan {
+    color: var(--primary-blue);
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: left;
+    transition: font-size 0.5s ease-in-out;
+}
+
+/* Galerie magazin */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 2px 4px 10px var(--dark-gray);
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain; 
+    display: block;
+    cursor: pointer;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.buy-btn {
+    margin-top: 10px;
+    padding: 10px 15px;
+    font-size: 14px;
+    line-height: 6px;
+    color: var(--white);
+    background-color: var(--lightblue);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.buy-btn:hover {
+    background-color: var(--primary-blue);
+}
+
+
+/*TABEL FAQ*/
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    display: block;
+    margin-top: 10px;
+}
+
+table {
+    min-width: 450px;
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+    transition: font-size 0.5s ease-in-out;
+    border-spacing: 10px;
+}
+
+table td, table th {
+    padding: 8px;
+}
+
+thead tr {
+    background-color: var(--primary-blue);
+    color: var(--white);
+}
+
+.cold-temp, tbody tr:nth-child(even) {
+    background-color: var(--lightblue);
+}
+
+tbody tr:nth-child(odd) {
+    background-color: var(--white);
+}
+
+tbody tr:hover {
+    background-color: var(--primary-blue);
+    transition: background-color 0.3s ease-in-out;
+}
+
+caption {
+    caption-side: bottom;
+    font-style: italic;
+    font-size: 18px;
+    color: var(--dark-gray);
+}
+
+/*Tab-uri iframe*/
+
+.taburi-iframe {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.taburi-iframe a {
+    display: inline-block;
+    line-height: 12px;
+    text-decoration: none;
+    background: linear-gradient(to bottom, var(--lightblue), var(--primary-blue));
+    border: 2px solid var(--darkgray);
+    border-radius: 10px 10px 0 0;
+    padding: 10px 16px;
+    font-size: 16px;
+    color: var(--white);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.taburi-iframe a:hover {
+    background: linear-gradient(to bottom, var(--primary-blue), var(--lightblue));
+    transform: scale(1.05);
+}
+
+.taburi-iframe a:focus {
+    background: var(--primary-blue);
+    outline: none;
+}
+
 
 @media screen and (max-width:1200px){
     #grid {
-        gap: 10px;
+        gap: 12px;
     }
+    
     body{
         --padding-pagina:30px;
     }
@@ -85,13 +264,27 @@ main {
         margin-top: 30px;
         margin-bottom: 50px;
     }
+
+    .table-container table {
+        font-size: 14px;
+    }
+
+    .taburi-iframe a {
+        font-size: 14px; 
+        padding: 8px 16px;
+        border-radius: 8px 8px 0 0;
+    }
 }
 
 @media screen and (max-width:800px){
     #grid {
         display: block;
-        gap: 8px;
     }
+
+    #grid > * {
+        margin-bottom: 20px;
+    }
+
     body{
         --padding-pagina:20px;
     }
@@ -101,19 +294,23 @@ main {
     }
 
     img {
-        margin-top: 80px;
-        margin-bottom: 50px;
+        margin-top: 90px;
+        margin-bottom: 0;
+    }
+
+    .table-container table {
+        font-size: 14px;
+        border-spacing: 0;
+    }
+
+    .table-container {
+        overflow-x: scroll;
+    }
+
+    .taburi-iframe a {
+        font-size: 12px;
+        padding: 6px 12px;
+        border-radius: 6px 6px 0 0;
     }
 }
 
-h2 {
-    color: #0097b2;
-    font-size: 1.6rem;
-}
-
-.slogan {
-    color: #0097b2;
-    font-size: 1.2em;
-    font-weight: bold;
-    text-align: left;
-}

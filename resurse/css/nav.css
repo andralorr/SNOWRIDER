@@ -1,0 +1,238 @@
+#ch-menu {
+    display: none;
+}
+
+#hamburger {
+    display: none; 
+    position: absolute;
+    top: -50px;
+    right: 40px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+
+label img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+nav {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+} 
+
+/* MENIU PRINCIPAL */
+ul.meniu{
+    position: relative;
+    display: flex;
+    list-style-type: none;
+    padding:0;
+}
+
+/* ELEMENTE MENIU */
+ul.meniu li {
+    margin: 0;
+    position: relative;
+    width: auto;
+    font-size: 18px;
+    padding: 6px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.text-icon {
+    cursor: pointer;
+}
+
+ul.meniu li > .text-icon {
+    display: block;
+    text-decoration: none;
+    color: var(--black);
+    padding: 10px;
+}
+
+ul.meniu li div.imag-icon{
+    display: none;
+}
+
+ul.meniu > li:hover > div,
+ul.meniu > li:hover > .text-icon a,
+ul.meniu > li:hover > a {
+    transform: scale(1.05);
+    transform-origin: center;
+    transition: transform 0.4s linear;
+}
+
+/* SUBMENIURI */
+ul.meniu ul {
+    background: var(--white);
+    position: absolute;
+    top: 70%;
+    display: none;
+    padding: 0;
+    width: max-content;
+    list-style-type: none;
+    margin-top: 4px;
+}
+
+ul.meniu li:hover> ul{
+    display: block;
+}
+
+ul.meniu ul li {
+    width: 100%;
+    text-align: left;
+    font-size: 15px;
+    line-height: 0.5;
+    margin-bottom: 8px;
+    position: relative;
+    overflow: visible;
+}
+
+ul.meniu ul li:hover > ul {
+    display: block;
+}
+
+/* Bara de efect */
+ul.meniu ul li::before,
+ul.meniu ul li::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 3px;
+    height: 0;
+    transform: translateY(-50%);
+    background: linear-gradient(to bottom, var(--white), var(--lightblue));
+    transition: height 0.4s ease-in-out;
+    display: block;
+    opacity: 0.7;
+}
+
+ul.meniu ul li::before {
+    left: 0;
+}
+
+ul.meniu ul li::after {
+    right: 0;
+}
+
+ul.meniu ul ul li::before {
+    display: none;
+}
+
+/* Efectul cand cursorul e pe element */
+ul.meniu ul li:hover::before,
+ul.meniu ul li:hover::after {
+    height: 100%;
+}
+
+ul.meniu ul li a {
+    display: block;
+    padding: 5px;
+    color: var(--black);
+    text-decoration: none;
+    margin: 0;
+}
+
+ul.meniu ul ul {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    display: none;
+    width: max-content;
+}
+
+@media screen and (max-width: 768px) {
+    #hamburger {
+        display: block;
+    }
+
+    #acasa {
+        display: none;
+    }
+
+    ul.meniu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        background: var(--white);
+        padding: 20px 0;
+        gap: 16px;
+    }
+
+    ul.meniu li {
+        width: auto;
+        text-align: center;
+        position: relative;
+    }
+
+    ul.meniu li .text-icon {
+        display: block;
+        padding: 10px 10px;
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--black);
+        text-decoration: none;
+        line-height: 1.3;
+        transition: all 0.3s ease-in-out;
+    }
+
+    ul.meniu li .text-icon:hover {
+        transform: scale(1.2);
+    }
+
+    ul.meniu li > ul {
+        display: none;
+        position: relative;
+        top: 100%;
+        left: 20%;
+        transform: translateX(10%);
+        padding-top: 3px;
+        width: max-content;
+        text-align: left;
+    }
+
+    ul.meniu li:hover > ul {
+        display: block;
+    }
+
+    ul.meniu ul ul li::before {
+        display: block;
+    }
+
+    ul.meniu ul ul li::after {
+        display: none;
+    }
+
+    ul.meniu li > ul > li {
+        padding: 6px 20px;
+        font-size: 13px;
+        line-height: 1.1;
+        white-space: nowrap;
+    }
+
+    ul.meniu li > ul > li > ul {
+        position: relative;
+        display: block;
+        transform: translateX(0);
+    }
+
+    ul.meniu li div.imag-icon {
+        display: block;
+        text-align: center;
+        color: var(--black);
+    }
+
+    #ch-menu:checked ~ ul.meniu {
+        display: flex;
+    }
+}
