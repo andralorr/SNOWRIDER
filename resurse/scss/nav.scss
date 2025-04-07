@@ -1,0 +1,313 @@
+#ch-menu {
+  display: none;
+}
+
+#hamburger {
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  width: 40px;
+  height: 40px;
+
+  .burger-lines {
+    width: 30px;
+    height: 22px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 4px 0;
+
+    span {
+      display: block;
+      height: 4px;
+      width: 100%;
+      background-color: var(--black);
+      border-radius: 2px;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+}
+
+label {
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+}
+  
+nav {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+ul.meniu {
+    position: relative;
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+  
+    li {
+      margin: 0;
+      position: relative;
+      width: auto;
+      font-size: 18px;
+      padding: 6px;
+      text-align: center;
+      font-weight: bold;
+
+      .text-icon {
+        cursor: pointer;
+      }
+  
+      > .text-icon {
+        display: block;
+        text-decoration: none;
+        color: var(--black);
+        padding: 10px;
+      }
+  
+      div.imag-icon {
+        display: none;
+      }
+
+      &:hover {
+        > ul {
+            display: block;
+        }
+      }
+    }
+
+    > li {
+        &:hover {
+          > div,
+          > .text-icon a,
+          > a {
+            transform: scale(1.05);
+            transform-origin: center;
+            transition: transform 0.4s linear;
+          }
+        }
+
+        &.has-submenu > .text-icon {
+            cursor: default;
+        }
+    }
+  
+    ul {
+        background: var(--white);
+        position: absolute;
+        top: 70%;
+        display: none;
+        padding: 0;
+        width: max-content;
+        list-style-type: none;
+        margin-top: 4px;
+  
+        li {
+          width: 100%;
+          text-align: left;
+          font-size: 15px;
+          line-height: 0.5;
+          margin-bottom: 8px;
+          position: relative;
+          overflow: visible;
+  
+          &:hover > ul {
+            display: block;
+          }
+  
+          &::before,
+          &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            width: 3px;
+            height: 0;
+            transform: translateY(-50%);
+            background: linear-gradient(to bottom, var(--white), var(--lightblue));
+            transition: height 0.4s ease-in-out;
+            display: block;
+            opacity: 0.7;
+          }
+  
+          &::before {
+            left: 0;
+          }
+  
+          &::after {
+            right: 0;
+          }
+  
+          &:hover::before,
+          &:hover::after {
+            height: 100%;
+          }
+  
+          a {
+            display: block;
+            padding: 5px;
+            color: var(--black);
+            text-decoration: none;
+            margin: 0;
+          }
+        }
+  
+        ul {
+            position: absolute;
+            left: 100%;
+            top: 0;
+            display: none;
+            width: max-content;
+
+            li::before {
+                display: none;
+            }
+
+            li::after {
+                right: 10px;
+            }
+        }
+    }
+}
+
+$bar-delay-step: 400ms;
+
+@keyframes burgerAppear {
+  0% {
+    transform: translateX(-20px) scaleX(0.5);
+    background-color: blue;
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(0px) scaleX(1.1);
+    background-color: var(--lightblue);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateX(0) scaleX(1);
+    background-color: var(--black);
+    opacity: 1;
+  }
+}
+
+@keyframes menuSlide {
+  0% {
+    transform: translateX(100%) scaleX(0.5);
+  }
+  100% {
+    transform: translateX(0%) scaleX(1);
+  }
+}
+
+@media screen and (max-width: 768px) {
+    #hamburger {
+      display: block;
+
+      .burger-lines {
+        @for $i from 1 through 3 {
+          span:nth-child(#{$i}) {
+            animation: burgerAppear 0.6s ease-out forwards;
+            animation-delay: ($i - 1) * $bar-delay-step;
+          }
+        }
+      }
+    }
+  
+    #acasa {
+      display: none;
+    }
+  
+    ul.meniu {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      background: var(--white);
+      padding: 20px 0;
+      gap: 16px;
+  
+      li {
+            width: auto;
+            text-align: center;
+            position: relative;
+    
+            .text-icon {
+            display: block;
+            padding: 10px 10px;
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--black);
+            text-decoration: none;
+            line-height: 1.3;
+            transition: all 0.3s ease-in-out;
+    
+            &:hover {
+                transform: scale(1.2);
+            }
+            }
+    
+            > ul {
+            display: none;
+            position: relative;
+            top: 100%;
+            left: 20%;
+            transform: translateX(10%);
+            padding-top: 3px;
+            width: max-content;
+            text-align: left;
+
+            > li {
+                    padding: 6px 20px;
+                    font-size: 13px;
+                    line-height: 1.1;
+                    white-space: nowrap;
+
+                    > ul {
+                        position: relative;
+                        display: block;
+                        transform: translateX(0);
+                    }
+                }
+            }
+
+            &:hover > ul{
+                display: block;
+            }
+
+            div.imag-icon {
+                display: block;
+                text-align: center;
+                color: var(--black);
+            }
+        }
+
+        ul {
+            ul {
+                li {
+                    &::before {
+                        display: block;
+                    }
+
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+  
+    #ch-menu:checked ~ ul.meniu {
+      display: flex;
+      animation: menuSlide 0.7s ease-out forwards;
+    }
+}

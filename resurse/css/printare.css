@@ -1,0 +1,101 @@
+@media print {
+    footer .banner-print {
+        visibility: visible;
+        position: absolute;
+        color: black;
+        top: 1cm;
+        right: 1cm;
+        width: 80%;
+        border: 1px dotted black;
+        padding: 10px;
+        text-align: center;
+        font-weight: bold;
+
+    }
+
+    figure, picture, .gallery, img, iframe, figcaption, #link-top {
+        display: none;
+    }
+
+    nav,
+    .meniu {
+        display: none;
+    }
+
+    #grid {
+		page-break-before:always;
+        display: block;
+        align-items: center;
+    }
+
+    #grid > * {
+        margin-bottom: 1.5cm;
+        page-break-inside: avoid; 
+    }
+
+    a {
+        text-decoration: none;
+        color: var(--black);
+    }
+
+    .logo-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        page-break-after: always;
+        text-align: center;
+      }
+    
+    .logo-container h1 {
+        font-size: 2.5em;
+        text-decoration: underline;
+        color: black;
+        margin: 0;
+    }
+
+    h1::after {
+        content: "";
+        display: block;
+        page-break-after: always;
+    }
+    
+    footer {
+        page-break-before: always;
+    }
+    
+    body::after {
+        content: "Copyright Capotă Andra-Lorena";
+        white-space: pre;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+        width: 100px;
+        height: 2cm;
+        border: 2px double var(--black);
+        opacity: 0.65;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: var(--black);
+        font-size: 20pt;
+        z-index: -1;
+        padding: 0.5cm 3cm; 
+    }
+    
+    * {
+        background-color: transparent !important;
+    }
+}
+
+@page:left{
+    margin-left: 2.5cm;
+    margin-right: 0.5cm;
+}
+
+@page:right{
+    margin-right: 2.5cm;
+    margin-left: 0.5cm;
+}
