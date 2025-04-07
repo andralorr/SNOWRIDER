@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html  lang="ro">
+    <head>
+        <meta name="description" content="Snowrider - magazin de echipamente sportive pentru iarnă">
+        <meta name="keywords" content="ski, snowboard, zapada, sporturi de iarna">
+        <title>Snowrider- eroare</title>
+        <%- include("../fragmente/head.ejs"); %> 
+        
+    </head>
+    <body>
+        
+    <%- include("../fragmente/header.ejs");  %> 
+
+    <main>
+        <div id="err-coloane">
+			<div id="err-imag">
+				<img src="<%- locals.imagine %>" />
+			</div>
+			<section>
+				<h2><%- locals.titlu %></h2>
+				<p><%- locals.text %></p>
+			</section>
+		</div>
+    </main>
+    
+    <%- include("../fragmente/footer.ejs") %> 
+
+    </body>
+</html>
