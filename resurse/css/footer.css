@@ -6,6 +6,10 @@ footer {
     font-size: 14px;
 }
 
+footer .banner-print {
+    visibility: hidden;
+}
+
 #link-top{
   position:fixed;
   bottom:0.5em;
