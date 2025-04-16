@@ -119,7 +119,7 @@ function afisareEroare(res, identificator, titlu, text, imagine){
                     });
     if(eroare){
         if(eroare.status)
-            res.status(identificator) //pagina incarcata corect status 200
+            res.status(identificator) 
         var titluCustom=titlu || eroare.titlu;
         var textCustom=text || eroare.text;
         var imagineCustom=imagine || eroare.imagine;
@@ -134,7 +134,7 @@ function afisareEroare(res, identificator, titlu, text, imagine){
 
 
     }
-    res.render("pagini/eroare", { //transmit obiectul locals
+    res.render("pagini/eroare", { 
         titlu: titluCustom,
         text: textCustom,
         imagine: imagineCustom
@@ -158,7 +158,8 @@ app.get("/favicon.ico",function(req,res){
 
 app.get(["/", "/home", "/index"], function(req, res){
     res.render("pagini/index", {
-        imagini: obGlobal.obImagini.imagini
+        imagini: obGlobal.obImagini.imagini,
+        ip: req.ip
     });
 });
 

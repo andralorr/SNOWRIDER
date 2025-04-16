@@ -149,6 +149,9 @@ details embed {
     outline: none;
 }
 
+#ip {
+    margin-left: 50px;
+}
 @media screen and (max-width: 1300px) {
     .slogan-wrapper {
         bottom: 200px;
