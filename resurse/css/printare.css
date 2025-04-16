@@ -35,7 +35,7 @@
 
     a {
         text-decoration: none;
-        color: var(--black);
+        color: black;
     }
 
     .logo-container {
@@ -73,13 +73,13 @@
         transform: translate(-50%, -50%) rotate(-45deg);
         width: 100px;
         height: 2cm;
-        border: 2px double var(--black);
+        border: 2px double black;
         opacity: 0.65;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        color: var(--black);
+        color: black;
         font-size: 20pt;
         z-index: -1;
         padding: 0.5cm 3cm; 

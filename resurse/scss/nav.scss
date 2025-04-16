@@ -103,7 +103,7 @@ ul.meniu {
     }
   
     ul {
-        background: var(--white);
+        background-color: var(--white);
         position: absolute;
         top: 70%;
         display: none;
@@ -184,7 +184,7 @@ $bar-delay-step: 400ms;
 @keyframes burgerAppear {
   0% {
     transform: translateX(-20px) scaleX(0.5);
-    background-color: blue;
+    background-color: var(--primary-blue);
     opacity: 0;
   }
   50% {
@@ -234,7 +234,7 @@ $bar-delay-step: 400ms;
       position: absolute;
       top: 50px;
       left: 0;
-      background: var(--white);
+      background-color: var(--white);
       padding: 20px 0;
       gap: 16px;
   

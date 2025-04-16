@@ -86,8 +86,8 @@
 
 .shop-btn {
     background-color: transparent;
-    color: #5CFF5C;
-    border: 4px solid #5CFF5C;
+    color: var(--green);
+    border: 4px solid var(--green);
     padding: 12px 24px;
     font-weight: 600;
     font-size: 1.2rem;
@@ -108,52 +108,6 @@
     grid-template-columns: 2fr 1fr;
     gap: 40px;
     padding: 40px;
-}
-
-/* Etapa 4 link-uri */
-a:link {
-    color: var(--black);
-}
-
-/* link vizitat */
-a:visited {
-    color: var(--navyblue);
-}
-
-/* linkuri externe — cele care au href ce incep cu http */
-a[href^="http"]::before {
-    content: "⮳";
-    margin-right: 0.25em;
-    font-size: 1.5em;;
-    vertical-align: middle;
-    color: var(--black);
-    transition: color 0.3s ease;
-    text-decoration: none;
-}
-
-/* hover pe link extern — schimba culoarea iconului */
-a[href^="http"]:hover::before {
-    color: var(--primary-blue);
-}
-
-.home-grid2 a[href^="/"] {
-    position: relative;
-    display: inline-block;
-    background-image: radial-gradient(var(--lightblue) 0%, var(--lightblue) 40%, transparent 80%, transparent 100%);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 0%;
-    transition: background-size 0.4s ease;
-}
-
-/* efect de pata la hover */
-.home-grid2 a[href^="/"]:hover {
-    background-size: 120%;
-}
-
-.home-grid2 a[href^="/"]:active {
-    outline: 2px solid var(--black);
-    outline-offset: 2px;
 }
 
 iframe {
@@ -191,7 +145,7 @@ details embed {
 }
 
 .taburi-iframe a:focus {
-    background: var(--primary-blue);
+    background: var(--lightgray);
     outline: none;
 }
 

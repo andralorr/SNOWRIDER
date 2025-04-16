@@ -1,11 +1,13 @@
 :root {
-    --black: #000000;
+    --primary-blue: #004AAD;
     --white: #FFFFFF;
-    --primary-blue: #4b9bc9;
-    --lightblue: #92c3e0;
-    --darkgray: #616161;
-    --navyblue: #004aad;
+    --black: #000000;
+    --lightblue: #4B9BC9;
+    --dark-gray: #4C5053;
+    --lightgray: #B3B3B8;
+    --green: #8de88b;
 }
+  
 
 #watermark, #banner-print{
     display:none;
@@ -91,6 +93,52 @@ caption {
     font-size: 18px;
     color: var(--dark-gray);
 }
+
+/* Etapa 4 link-uri */
+a:not(nav a):not(footer a):link {
+    color: var(--black);
+}
+
+a:not(nav a):not(footer a):visited {
+    color: var(--primary-blue);
+}
+
+a[href^="mailto"]:not(nav a):not(footer a)::before,
+a[href^="tel"]:not(nav a):not(footer a)::before,
+a[href^="http"]:not(nav a):not(footer a)::before {
+    content: "⮳";
+    color: var(--black);
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+a[href^="mailto"]:not(nav a):not(footer a):hover::before,
+a[href^="tel"]:not(nav a):not(footer a):hover::before,
+a[href^="http"]:not(nav a):not(footer a):hover::before {
+    color: var(--green);
+}
+
+/* pata de culoare la link-uri interne doar la hover */
+a[href^="/"]:not(nav a):not(footer a) {
+    position: relative;
+    display: inline-block;
+    background-image: radial-gradient(var(--lightblue) 0%, var(--lightblue) 40%, transparent 80%, transparent 100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 0%;
+    transition: background-size 0.4s ease;
+}
+
+a[href^="/"]:not(nav a):not(footer a):hover {
+    background-size: 120%;
+}
+
+/*chenar la click*/
+a[href^="/"]:not(nav a):not(footer a):active {
+    outline: 2px solid var(--black);
+    outline-offset: 2px;
+}
+
 
 @media screen and (max-width: 768px){
     .top-icons {

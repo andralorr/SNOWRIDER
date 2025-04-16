@@ -113,7 +113,7 @@ footer .banner-print {
 
 .footer-bottom {
     text-align: center;
-    border-top: 1px solid var(--darkgray);
+    border-top: 1px solid var(--dark-gray);
     padding-top: 15px;
     margin-top: 20px;
     font-size: 16px;
@@ -129,7 +129,8 @@ footer .banner-print {
     color: var(--white);
 }
 
-.footer-column a:hover {
+.footer-column a:hover,
+.footer-bottom a:hover{
     color: var(--primary-blue);
     transition: color 0.3s ease;
 }
@@ -155,16 +156,7 @@ footer .banner-print {
     text-decoration: none;
     font-weight: 500;
 }
-
-.print-footer a {
-    text-decoration: none;
-}
   
-.print-footer a[href^="http"]::before {
-    content: none;
-}
-  
-
 @media (max-width: 1024px) {
     .footer-container {
         grid-gap: 15px;
@@ -184,7 +176,7 @@ footer .banner-print {
         left: 90%;
         transform: translateX(-10%);
         bottom: 120%;
-        box-shadow: 0 2px 5px var(--darkgray);
+        box-shadow: 0 2px 5px var(--dark-gray);
     }
     #triunghi{
         font-size: 25px;

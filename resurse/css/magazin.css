@@ -1,6 +1,7 @@
 #magazin {
     padding: 40px;
 }
+
 /* Galerie magazin */
 .gallery {
     display: grid;
@@ -29,7 +30,7 @@
 }
 
 .buy-btn {
-    margin-left: 50px;
+    margin-left: 120px;
     margin-top: 10px;
     padding: 10px 15px;
     font-size: 14px;
