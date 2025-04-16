@@ -119,7 +119,7 @@ a[href^="http"]:not(nav a):not(footer a):hover::before {
 }
 
 /* pata de culoare la link-uri interne doar la hover */
-a[href^="/"]:not(nav a):not(footer a) {
+a[href^="/"]:not(nav a):not(footer a):not(.top-icons a) {
     position: relative;
     display: inline-block;
     background-image: radial-gradient(var(--lightblue) 0%, var(--lightblue) 40%, transparent 80%, transparent 100%);
@@ -129,12 +129,12 @@ a[href^="/"]:not(nav a):not(footer a) {
     transition: background-size 0.4s ease;
 }
 
-a[href^="/"]:not(nav a):not(footer a):hover {
+a[href^="/"]:not(nav a):not(footer a):not(.top-icons a):hover {
     background-size: 120%;
 }
 
 /*chenar la click*/
-a[href^="/"]:not(nav a):not(footer a):active {
+a[href^="/"]:not(nav a):not(footer a):not(.top-icons a):active {
     outline: 2px solid var(--black);
     outline-offset: 2px;
 }
