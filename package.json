@@ -1,0 +1,35 @@
+{
+  "name": "snowrider",
+  "version": "1.0.0",
+  "description": "Magazin online de echipamente pentru sporturi de iarna",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andralorr/SNOWRIDER.git"
+  },
+  "keywords": [
+    "ski",
+    "snowboard",
+    "echipament",
+    "sporturi",
+    "de",
+    "iarna",
+    "zapada"
+  ],
+  "author": "Andra-Lorena Capota",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andralorr/SNOWRIDER/issues"
+  },
+  "homepage": "https://github.com/andralorr/SNOWRIDER#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.5",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "sass": "^1.86.3",
+    "sharp": "^0.34.0"
+  }
+}

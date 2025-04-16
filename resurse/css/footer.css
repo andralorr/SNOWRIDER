@@ -156,6 +156,15 @@ footer .banner-print {
     font-weight: 500;
 }
 
+.print-footer a {
+    text-decoration: none;
+}
+  
+.print-footer a[href^="http"]::before {
+    content: none;
+}
+  
+
 @media (max-width: 1024px) {
     .footer-container {
         grid-gap: 15px;

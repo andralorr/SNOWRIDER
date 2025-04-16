@@ -1,0 +1,40 @@
+{
+	"cale_galerie":"resurse/imagini/galerie",
+	"imagini": [
+		{
+			"fisier":"ski.png",
+			"descriere":"Brioșe",
+			"luni":["martie","februarie","noiembrie","aprilie", "decembrie"]
+		},
+		{
+			"fisier":"ski2.png",
+			"descriere":"Clătite cu dulceață",
+			"luni":["ianuarie","februarie","iunie"]
+		},
+		{
+			"fisier":"ski3.png",
+			"descriere":"Gogoși glazurate",
+			"luni":["ianuarie","noiembrie","iunie","martie","aprilie"]
+		},
+		{
+			"fisier":"ski4.png",
+			"descriere":"Tort cu scorțisoară",
+			
+			"luni":["noiembrie","aprilie", "decembrie"]
+		},
+		{
+			"fisier":"ski5.png",
+			"descriere":"Prăjitură cu ciocolată",
+			
+			"luni":["noiembrie","aprilie", "decembrie"]
+		},
+		{
+			"fisier":"ski6.png",
+			"descriere":"Tartă cu afine"
+		},
+		{
+			"fisier":"ski7.png",
+			"descriere":"Tort special"
+		}
+	]
+}

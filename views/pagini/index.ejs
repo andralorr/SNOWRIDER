@@ -25,262 +25,212 @@
                     alt="Imagine de fundal">
             </picture>
 
-            <!-- <div id="carusel-container">
-                <div id="carusel">
-                    <figure>
-                        <img src="resurse/imagini/png_home/geaca1.png" alt="Geaca 1">
-                    </figure>
-                    <figure>
-                        <img src="resurse/imagini/png_home/geaca2.png" alt="Geaca 2">
-                    </figure>
-                    <figure>
-                        <img src="resurse/imagini/png_home/casca.png" alt="Cască">
-                    </figure>
-                    <figure>
-                        <img src="resurse/imagini/png_home/snowboard.png" alt="Snowboard">
-                    </figure>
+            <div class="carousel-container">
+                <div class="carousel-slide active">
+                    <img src="resurse/imagini/produse/1.png" alt="Produs 1">
                 </div>
-            </div> -->
+                <div class="carousel-slide prev">
+                    <img src="resurse/imagini/produse/3.png" alt="Produs 3">
+                </div>
+                <div class="carousel-slide next">
+                    <img src="resurse/imagini/produse/2.png" alt="Produs 2">
+                </div>
+            
+                <button class="carousel-btn prev">&#10094;</button>
+                <button class="carousel-btn next">&#10095;</button>
+            </div>
+            <div class="slogan-wrapper">
+                <i class="slogan1-cover">Ride the Snow. Own the Mountain.</i>
+                <i class="slogan2-cover">Controlează viteza. Stăpânește terenul. Depășește-ți limitele.</i>
+            </div>              
         </div>
 
-        <div id="grid">
-            <section id="acasa">
-                <h2>ACASĂ</h2>
-                <i class="slogan">Ride the Snow. Own the Mountain.</i><br>
-                <button type="button" class="btn btn-primary btn-lg">Stil-1-mare</button>
-                <!-- <p><b>IP</b><%- locals.ip  %></p> -->
-                <i>Controlează viteza. Stăpânește terenul. Depășește-ți limitele.</i>
-    
-                <h3>De ce SNOWRIDER? Excelență în fiecare detaliu!</h3>
-                <ul>
-                    <li><strong>Performanță de vârf</strong> – Echipamentele noastre oferă <b>control, stabilitate și durabilitate</b> chiar și în cele mai dificile condiții.</li>
-                    <li><strong>Tehnologie avansată</strong> – Utilizăm <b>materiale de ultimă generație și inovații de top</b> pentru a optimiza greutatea, rezistența și confortul, asigurând astfel o experiență superioară pe pârtie și în afara ei. </li>
-                    <li><strong>Aprobat de profesioniști</strong> – Testate în teren de către atleți și experți, produsele SNOWRIDER sunt construite pentru cei care nu fac compromisuri atunci când vine vorba de <b>echipament de iarnă</b>. </li>
-                    <li><strong>Experiență premium de cumpărare</strong> - De la selecția riguroasă a produselor până la livrare rapidă și un proces de retur simplificat, fiecare interacțiune cu SNOWRIDER este gândită pentru a-ți oferi siguranță și încredere.  </li>
-                    <li><strong>Pentru fiecare tip de rider</strong> –  Indiferent dacă ești începător, pasionat sau profesionist, găsești în SNOWRIDER <b>echipamente adaptate stilului tău</b>, fie că practici schi alpin, freeride, freestyle sau snowboard. </li>
-                    <li><strong>Experiență premium de cumpărare</strong> –  De la selecția riguroasă a produselor până la livrare rapidă și un proces de retur simplificat, fiecare interacțiune cu SNOWRIDER este gândită pentru a-ți oferi siguranță și încredere. Beneficiezi de <b>reduceri la snowboard</b> și <b>promoții la schi</b> în <b>magazinul nostru</b> de echipamente de iarnă. </li>
-                </ul>
-            </section>
+        <picture class="png-home1">
+            <img src="resurse/imagini/home/home1.png">
+        </picture>
 
-            <section id="desprenoi">
-                <h2>DESPRE NOI</h2>
-                <h3 id="cine-suntem">Cine suntem?</h3>
-                <h3>SNOWRIDER – Mai mult decât un brand, un stil de viață <i class="fa-solid fa-person-snowboarding"></i></h3>
-                <p>SNOWRIDER nu este doar un nume în <b>industria sporturilor de iarnă</b> – este o declarație de <b>performanță, precizie și libertate</b>.</p>
+        <div class="separator"><p>PRODUSE FAVORITE</p></div>
+        <section id="magazin">
+            <blockquote>Controlează viteza. Stăpânește terenul. Depășește-ți limitele.</blockquote>
+            <div class="gallery">
+                <div class="gallery-item"><img src="resurse/imagini/produse/1.png" alt="Produs 1"><button class="buy-btn">Vezi produsul</button></div>
+                <div class="gallery-item"><img src="resurse/imagini/produse/2.png" alt="Produs 2"><button class="buy-btn">Vezi produsul</button></div>
+                <div class="gallery-item"><img src="resurse/imagini/produse/3.png" alt="Produs 3"><button class="buy-btn">Vezi produsul</button></div>
+                <div class="gallery-item"><img src="resurse/imagini/produse/4.png" alt="Produs 4"><button class="buy-btn">Vezi produsul</button></div>
+            </div>
+        </section>
 
-                <figure>
+        <div class="home-grid">
+            <div class="home-content">
+                <p class="content1"><strong>SNOWRIDER</strong><br></p>
+                <p class="content2">
+                    Ride the snow.<br>
+                    Own the mountain.
+                </p>
+                <div class="btn-container">
+                    <button class="shop-btn">SHOP NOW</button>
+                </div>
+            </div>
+            <picture class="png-home2">
+                <img src="resurse/imagini/home/home2.png" alt="Snowrider">
+            </picture>
+        </div>        
+          
+        <!-- <button type="button" class="btn btn-primary btn-lg">Stil-1-mare</button> -->
+        <!-- <p><b>IP</b><%- locals.ip  %></p> -->        
+
+        <div class="top-icons">
+            <a href="/cont" class="icon-link">
+              <i class="fas fa-user"></i>
+            </a>
+            <a href="/cos" class="icon-link">
+              <i class="fas fa-shopping-cart"></i>
+            </a>
+        </div>
+
+        <!-- <section id="digitalcoach">
+            <h2>Tehnologie și inovație în schi</h2>
+            <p>Nu doar echipamentul face diferența pe pârtie. Acum, cu ajutorul unui <strong>Digital Coach</strong>, îți poți îmbunătăți tehnica și performanțele.</p>
+            <p>Urmărește videoclipurile săptămânale și învață cum să-ți perfecționezi controlul, să crești viteza și să cobori cu mai multă siguranță și precizie.</p>
+            <iframe id="videoFrame" width="560" height="315" src="https://www.youtube.com/embed/L8M4REIZVG8" allowfullscreen></iframe>
+            <blockquote><i>Ride de Snow. <br> Own the mountain.</i></blockquote>
+        </section>
+        -->
+    <div class="home-grid2">
+        <section id="faq">
+            <h2>FAQ</h2>
+        
+            <details>
+                <summary>Ce metode de plată acceptați?</summary>
+                <p>Acceptăm plăți online prin Visa/Mastercard și plată la livrare.</p>
+            </details>
+        
+            <details>
+                <summary>Cât durează livrarea?</summary>
+                <p>Livrarea durează între 7-10 zile lucrătoare, în funcție de locația dumneavoastră.</p>
+            </details>
+
+            <!-- bonus embed pdf -->
+            <details>
+                <summary>Se poate face retur?</summary>
+                <p>Da. Vă încurajăm să consultați <a href="resurse/pdf/info_livrare_retur.pdf" download>politica noastră de livrare și retur</a> de mai jos.</p>
+                <embed src="resurse/pdf/info_livrare_retur.pdf" type="application/pdf" width="900" height="500">
+            </details>
+
+            <p>Pentru a te asigura că ești bine echipat pentru temperaturile scăzute, consultă tabelul de mai jos:</p>
+            <div class="table-container">
+                <table>
+                    <caption>Recomandări de echipament pentru sporturile de iarnă în funcție de temperatură</caption>
+                    <thead>
+                         <tr>
+                            <th>Temperatură</th>
+                            <th>Echipament esențial</th>
+                            <th>Stratificare recomandată</th>
+                            <th>Observații importante</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>&lt; -20°C</td>
+                            <td>Geacă de puf extrem, mănuși groase, cască termoizolantă</td>
+                            <td>4 straturi (lenjerie termică, polar, jachetă izolată, strat impermeabil)</td>
+                            <td>Folosiți mască de față și cremă anti-îngheț</td>
+                        </tr>
+                        <tr>
+                            <td>-20°C - -10°C</td>
+                            <td>Geacă ski de calitate, pantaloni termoizolanți, mănuși izolate</td>
+                            <td>3-4 straturi (termic, fleece, strat protector, geacă ski)</td>
+                            <td>Atenție la ger! Vântul puternic necesită protecție suplimentară.</td>
+                        </tr>
+                            <tr>
+                                <td>-10°C - 0°C</td>
+                                <td>Jachetă softshell, mănuși ușoare, strat de bază respirabil</td>
+                                <td>3 straturi (termic, fleece, strat protector)</td>
+                                <td>Evitați supraîncălzirea prin ventilație adecvată.</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">0°C - 10°C</td>
+                                <td>2 straturi (termic, strat impermeabil)</td>
+                                <td>Folosiți îmbrăcăminte respirabilă și impermeabilă.</td>
+                            </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="4">Verificați prognoza meteo și adaptați echipamentul pentru siguranță maximă!</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>    
+            <div class="contact-faq">
+                <p>Ai întrebări suplimentare sau nelămuriri? <a href="/contact"> Contactează-ne!</a></p>
+            </div>
+                    </section>
+
+        <section id="meteo">
+            <h2><strong>IMPORTANT <i class="fa-solid fa-triangle-exclamation fa-beat"></i></strong></h2>
+            <h3>Verifică vremea înainte de a merge pe pârtie!</h3>
+            <p>Prognoza meteo pentru pârtiile din:</p>
+
+            <div class="taburi-iframe">
+                <a href="https://www.meteoblue.com/en/weather/widget/daily/bra%C8%99ov_romania_683844?geoloc=fixed&days=7&tempunit=C&windunit=kmh&precipunit=mm&layout=image" target="ifr-meteo">Brașov</a>
+                <a href="https://www.meteoblue.com/en/weather/widget/daily/predeal_romania_669704?geoloc=fixed&days=7&tempunit=C&windunit=kmh&precipunit=mm&layout=image" target="ifr-meteo">Predeal</a>
+                <a href="https://www.meteoblue.com/en/weather/widget/daily/vatra-dornei_romania_663100?geoloc=fixed&days=7&tempunit=C&windunit=kmh&precipunit=mm&layout=image" target="ifr-meteo">Vatra Dornei</a>
+            </div>
+
+            <iframe name="ifr-meteo" src="https://www.meteoblue.com/en/weather/widget/daily/brașov_romania_683844?geoloc=fixed&days=7&tempunit=C&windunit=kmh&precipunit=mm&layout=image"></iframe>
+            
+            <p>Verifică mai multe detalii pe <a href="https://www.meteoblue.com/en/weather/week/brașov_romania_683844" target="_blank" rel="noopener noreferrer">MeteoBlue</a>.</p>
+
+        </section>
+    </div>
+
+        <!-- <section id="calendar">
+            <div class="calendar">
+                <h2>Calendar promoții</h2>
+                <iframe src="https://calendar.google.com/calendar/embed?src=your_calendar_id" 
+                    style="border: 0" width="100%" height="300" frameborder="0" scrolling="no">
+                </iframe>
+            </div>
+        </section> -->
+        <!-- MathML -->
+        <!-- <section id="formula">
+            <h2>Formula SnowRider pentru o zi perfectă pe pârtie:</h2>
+            <div class="formula">
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mi style="font-weight: bold; color: red;">Performanță</mi>
+                <mo>=</mo>
+                <mi style="font-weight: bold; font-style: italic; color: var(--lightblue);" >Echipament </mi>
+                <mo>&#x00D7;</mo>
+                <mi style="font-weight: bold; font-style: italic; color: var(--lightblue);"> Adaptabilitate</mi>
+                <mo>+</mo>
+                <msup>
+                    <mi style="font-weight: bold; font-style: italic; color: var(--lightblue);">Confort</mi>
+                    <mn style="font-weight: bold;">3</mn>
+                </msup>
+                </math>
+            </div>
+            <p>Noi credem că performanța nu vine doar din viteză sau tehnică.<br>
+            Vine din potrivirea exactă între tine și echipamentul tău.</p>
+            <p><strong>Confortul? Îl ridicăm la puterea a treia.</strong></p>
+            <picture><img src="resurse/imagini/imagine_formula.png"></picture>
+        </section> -->
+
+
+        <!-- <section id = "galerie-statica">
+            <h2>Galerie</h2>
+            <div id = "grid-galerie">
+                <%for(let imag of locals.imagini){ %>
                     <picture>
-                        <img
-                            sizes="(max-width: 1024px) 100vw, 1024px"
-                            srcset="
-                            resurse/imagini/ski/ski343.png 343w,
-                            resurse/imagini/ski/ski443.png 443w,
-                            resurse/imagini/ski/ski676.png 676w,
-                            resurse/imagini/ski/ski991.png 991w,
-                            resurse/imagini/ski/ski1024.png 1024w"
-                            src="resurse/imagini/ski/ski1024.png" usemap="#image_map"
-                            alt="Imagine de ski">
-                    </picture>                    
-                    <figcaption>Ride the Snow. Own the Mountain.</figcaption>
-                </figure>
+                            <source srcset = "<%- imag.fisier_mediu %>" media = "screen and (max-width: 1000px)" />
+                            <img src = "<%- imag.fisier %>" alt = "ski">
+                    </picture>
+                <% } %>
+            </div>
+        </section> -->
 
-                <!-- bonus map -->
-                <map name="image_map">
-                    <area alt="Cască" title="Vezi in magazin" href="#magazin" coords="387,29,586,221" shape="rect">
-                </map>
-
-                <p>SNOWRIDER a fost creat pentru cei care înțeleg că <b>performanța</b> nu este un accident, ci <b>rezultatul pregătirii</b>, al <b>echipamentului potrivit</b> și al unei dorințe continue de <b>depășire a limitelor</b>. </p>
-                <h3 id="misiune">Misiunea noastră</h3>
-                <p>Ne propunem să dezvoltăm <b>echipamente de iarnă profesionale</b> care oferă <b>stabilitate, viteză și control absolut</b>. Ne bazăm pe <b>inovație tehnologică, materiale de ultimă generație</b> și <b>experiența în sporturile de iarnă</b> a riderilor de top pentru a crea produse care îți oferă încrederea de a domina orice teren, indiferent de condiții.</p>
-
-                <h4>Performanță fără limite:</h4>
-                <ul>
-                    <li><strong>Inginerie de precizie</strong> –  Dezvoltăm produse optimizate pentru <b>stabilitate</b> și <b>reacții rapide</b>. </li>
-                    <li><strong>Tehnologie avansată</strong> –  Folosim cele mai noi materiale pentru un echilibru perfect între <b>greutate, rezistență și confort</b>. </li>
-                    <li><strong>Testat în condiții extreme</strong> – Fiecare produs este validat de atleți și profesioniști pentru <b>performanță maximă</b>.</li>
-                    <li><strong>Adaptat oricărui stil</strong> – De la pârtii amenajate la terenuri tehnice de freeride, <b>echipamentele noastre sunt construite pentru excelență</b>. </li>
-                </ul>
-                <h3>Libertatea în forma ei pură</h3>
-                <p>Sporturile de iarnă sunt mai mult decât viteză sau adrenalină – sunt despre precizie, anticipare și fluiditate. SNOWRIDER îți oferă echipamentele care îți permit să fii în armonie cu muntele și să îți transformi fiecare coborâre într-o experiență pură de libertate și control. </p>
-                
-                <p><i>Ride the Snow. Own the Mountain.</i></p>
-                <p>Fie că îți perfecționezi tehnica pe pârtie, explorezi rute noi în freeride sau îți testezi abilitățile în snowpark, SNOWRIDER este partenerul tău în fiecare mișcare.</p>
-                <i><q>Controlează viteza. Stăpânește terenul. Depășește-ți limitele. </q></i>
-            </section>
-
-            <section id="magazin">
-                <h2>MAGAZIN <i class="fa-solid fa-basket-shopping fa-bounce"></i></h2>
-                <blockquote>Controlează viteza. Stăpânește terenul. Depășește-ți limitele.</blockquote>
-                <div class="gallery">
-                    <div class="gallery-item"><img src="resurse/imagini/produse/1.png" alt="Produs 1"><button class="buy-btn">Vezi produsul</button></div>
-                    <div class="gallery-item"><img src="resurse/imagini/produse/2.png" alt="Produs 2"><button class="buy-btn">Vezi produsul</button></div>
-                    <div class="gallery-item"><img src="resurse/imagini/produse/3.png" alt="Produs 3"><button class="buy-btn">Vezi produsul</button></div>
-                    <div class="gallery-item"><img src="resurse/imagini/produse/4.png" alt="Produs 4"><button class="buy-btn">Vezi produsul</button></div>
-                </div>
-            </section>
-
-            <section id="contact">
-                <h2>CONTACT <i class="fa-solid fa-phone-flip"></i></h2>
-                <p>Ai nevoie de asistență, sfaturi sau informații despre echipamente de schi? Suntem aici să te ajutăm!</p>
-
-                <ul>
-                    <li><strong>Email:</strong> <a href="mailto:contact@snowrider.com">contact@snowrider.com</a></li>
-                    <li><strong>Telefon:</strong> <a href="tel:+40789532122">+40 789 532 122</a></li>
-                    <li><strong>Adresa:</strong> Str. Zăpezii nr.1, București, România</li>
-                </ul>
-                <!-- adresa facultatii bonus -->
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.884301139315!2d26.09701177610269!3d44.43553547107578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff472f47f047%3A0x493984726f0235f9!2sFaculty%20of%20Mathematics%20and%20Computer%20Science!5e0!3m2!1sen!2sro!4v1741198322506!5m2!1sen!2sro"
-                    width="600" 
-                    height="450" 
-                    style="border:0;" 
-                    allowfullscreen="" 
-                    loading="lazy" 
-                    referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
-
-                <p>Vizitează-ne și descoperă un <b>magazin de sporturi de iarnă</b> dedicat pasionaților de ski și snowboard!</p>
-
-                <section id = "galerie-statica">
-                    <h2>Galerie</h2>
-                    <div id = "grid-galerie">
-                        <%for(let imag of locals.imagini){ %>
-                            <picture>
-                                    <source srcset = "<%- imag.fisier_mediu %>" media = "screen and (max-width: 1000px)" />
-                                    <img src = "<%- imag.fisier %>" alt = "ski">
-                            </picture>
-                        <% } %>
-                    </div>
-                </section>
-            </section>
-
-            <section id="digitalcoach">
-                <h2>Tehnologie și inovație în schi</h2>
-                <p>Nu doar echipamentul face diferența pe pârtie. Acum, cu ajutorul unui <strong>Digital Coach</strong>, îți poți îmbunătăți tehnica și performanțele.</p>
-                <p>Urmărește videoclipurile săptămânale și învață cum să-ți perfecționezi controlul, să crești viteza și să cobori cu mai multă siguranță și precizie.</p>
-                <iframe id="videoFrame" width="560" height="315" src="https://www.youtube.com/embed/L8M4REIZVG8" allowfullscreen></iframe>
-                <blockquote><i>Ride de Snow. <br> Own the mountain.</i></blockquote>
-            </section>
-            
-            <section id="meteo">
-                <h2><strong>IMPORTANT <i class="fa-solid fa-triangle-exclamation fa-beat"></i></strong></h2>
-                <h3>Verifică vremea înainte de a merge pe pârtie!</h3>
-                <p>Prognoza meteo pentru pârtiile din:</p>
-
-                <div class="taburi-iframe">
-                    <a href="https://www.meteoblue.com/en/weather/widget/daily/bra%C8%99ov_romania_683844?geoloc=fixed&days=7&tempunit=C&windunit=kmh&precipunit=mm&layout=image" target="ifr-meteo">Brașov</a>
-                    <a href="https://www.meteoblue.com/en/weather/widget/daily/predeal_romania_669704?geoloc=fixed&days=7&tempunit=C&windunit=kmh&precipunit=mm&layout=image" target="ifr-meteo">Predeal</a>
-                    <a href="https://www.meteoblue.com/en/weather/widget/daily/vatra-dornei_romania_663100?geoloc=fixed&days=7&tempunit=C&windunit=kmh&precipunit=mm&layout=image" target="ifr-meteo">Vatra Dornei</a>
-                </div>
-
-                <iframe name="ifr-meteo" src="https://www.meteoblue.com/en/weather/widget/daily/brașov_romania_683844?geoloc=fixed&days=7&tempunit=C&windunit=kmh&precipunit=mm&layout=image" width="560" height="315"></iframe>
-                
-                <p>Verifică mai multe detalii pe <a href="https://www.meteoblue.com/en/weather/week/brașov_romania_683844" target="_blank" rel="noopener noreferrer">MeteoBlue</a>.</p>
-
-            </section>
-
-            <section id="faq">
-                <h2>Întrebări frecvente</h2>
-            
-                <details>
-                    <summary>Ce metode de plată acceptați?</summary>
-                    <p>Acceptăm plăți online prin Visa/Mastercard și plată la livrare.</p>
-                </details>
-            
-                <details>
-                    <summary>Cât durează livrarea?</summary>
-                    <p>Livrarea durează între 7-10 zile lucrătoare, în funcție de locația dumneavoastră.</p>
-                </details>
-
-                <!-- bonus embed pdf -->
-                <details>
-                    <summary>Se poate face retur?</summary>
-                    <p>Da. Vă încurajăm să consultați <a href="resurse/pdf/info_livrare_retur.pdf" download>politica noastră de livrare și retur</a> de mai jos.</p>
-                    <embed src="resurse/pdf/info_livrare_retur.pdf" type="application/pdf" width="900" height="500">
-                </details>
-
-                <details>
-                    <summary>Cum mă îmbrac corect pentru o zi de ski sau snowboard?</summary>
-                    <p>Pentru a te asigura că ești bine echipat pentru temperaturile scăzute, consultă tabelul de mai jos:</p>
-                
-                    <div class="table-container">
-                        <table>
-                            <caption>Recomandări de echipament pentru sporturile de iarnă în funcție de temperatură</caption>
-                            <thead>
-                                <tr>
-                                    <th>Temperatură</th>
-                                    <th>Echipament esențial</th>
-                                    <th>Stratificare recomandată</th>
-                                    <th>Observații importante</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>&lt; -20°C</td>
-                                    <td>Geacă de puf extrem, mănuși groase, cască termoizolantă</td>
-                                    <td>4 straturi (lenjerie termică, polar, jachetă izolată, strat impermeabil)</td>
-                                    <td>Folosiți mască de față și cremă anti-îngheț</td>
-                                </tr>
-                                <tr>
-                                    <td>-20°C - -10°C</td>
-                                    <td>Geacă ski de calitate, pantaloni termoizolanți, mănuși izolate</td>
-                                    <td>3-4 straturi (termic, fleece, strat protector, geacă ski)</td>
-                                    <td>Atenție la ger! Vântul puternic necesită protecție suplimentară.</td>
-                                </tr>
-                                <tr>
-                                    <td>-10°C - 0°C</td>
-                                    <td>Jachetă softshell, mănuși ușoare, strat de bază respirabil</td>
-                                    <td>3 straturi (termic, fleece, strat protector)</td>
-                                    <td>Evitați supraîncălzirea prin ventilație adecvată.</td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2">0°C - 10°C</td>
-                                    <td>2 straturi (termic, strat impermeabil)</td>
-                                    <td>Folosiți îmbrăcăminte respirabilă și impermeabilă.</td>
-                                </tr>
-                            </tbody>
-                            <tfoot>
-                                <tr>
-                                    <td colspan="4">Verificați prognoza meteo și adaptați echipamentul pentru siguranță maximă!</td>
-                                </tr>
-                            </tfoot>
-                        </table>
-                    </div>    
-                </details>
-            </section>
-
-            <section id="calendar">
-                <div class="calendar">
-                    <h2>Calendar promoții</h2>
-                    <iframe src="https://calendar.google.com/calendar/embed?src=your_calendar_id" 
-                        style="border: 0" width="100%" height="300" frameborder="0" scrolling="no">
-                    </iframe>
-                </div>
-            </section>
-            <!-- MathML -->
-            <section id="formula">
-                <h2>Formula SnowRider pentru o zi perfectă pe pârtie:</h2>
-                <div class="formula">
-                    <math xmlns="http://www.w3.org/1998/Math/MathML">
-                    <mi style="font-weight: bold; color: red;">Performanță</mi>
-                    <mo>=</mo>
-                    <mi style="font-weight: bold; font-style: italic; color: var(--lightblue);" >Echipament </mi>
-                    <mo>&#x00D7;</mo>
-                    <mi style="font-weight: bold; font-style: italic; color: var(--lightblue);"> Adaptabilitate</mi>
-                    <mo>+</mo>
-                    <msup>
-                        <mi style="font-weight: bold; font-style: italic; color: var(--lightblue);">Confort</mi>
-                        <mn style="font-weight: bold;">3</mn>
-                    </msup>
-                    </math>
-                </div>
-                <p>Noi credem că performanța nu vine doar din viteză sau tehnică.<br>
-                Vine din potrivirea exactă între tine și echipamentul tău.</p>
-                <p><strong>Confortul? Îl ridicăm la puterea a treia.</strong></p>
-                <picture><img src="resurse/imagini/imagine_formula.png"></picture>
-            </section>
-        </div>
     </main>
 
     <%- include("../fragmente/footer.ejs") %>
+    <script src="resurse/js/carusel-home.js"></script>
 </body>
 </html>
