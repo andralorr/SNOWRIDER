@@ -2,39 +2,142 @@
 	"cale_galerie":"resurse/imagini/galerie",
 	"imagini": [
 		{
-			"fisier":"ski.png",
-			"descriere":"Brioșe",
-			"luni":["martie","februarie","noiembrie","aprilie", "decembrie"]
+			"cale_fisier":"boots.png",
+			"titlu":"Clăpari High-Tech SnowForce",
+			"alt":"Clăpari negri cu elemente metalice",
+			"text_descriere":"Design robust și performanță în condiții extreme. Alegerea profesioniștilor.",
+			"luni":["martie","februarie", "aprilie"],
+			"atribut_licenta": {
+				"autor": "Canva Creator",
+				"sursa": "https://www.canva.com",
+				"licenta": "Canva license"
+			}
 		},
 		{
-			"fisier":"ski2.png",
-			"descriere":"Clătite cu dulceață",
-			"luni":["ianuarie","februarie","iunie"]
+			"cale_fisier":"echipament.png",
+			"titlu":"Freestyle",
+			"alt":"Skior pe grind în zăpadă, echipament colorat, trick freestyle",
+			"text_descriere":"Echipamentul contează când tu dai 100%.",
+			"luni":["ianuarie","martie","februarie"]
 		},
 		{
-			"fisier":"ski3.png",
-			"descriere":"Gogoși glazurate",
-			"luni":["ianuarie","noiembrie","iunie","martie","aprilie"]
+			"cale_fisier":"echipament2.png",
+			"titlu":"Freestyle Rider",
+			"alt":"Schior în pădure, echipament verde",
+			"text_descriere":"Pentru cei care își depășesc limitele. Freestyle în cea mai pură formă.",
+			"luni":["februarie","martie", "aprilie"]
 		},
 		{
-			"fisier":"ski4.png",
-			"descriere":"Tort cu scorțisoară",
-			
-			"luni":["noiembrie","aprilie", "decembrie"]
+			"cale_fisier":"echipament3.png",
+			"titlu":"Ready",
+			"alt":"Snowboarder cu placă albă în brațe pe fundal de zăpadă",
+			"text_descriere":"Pregătit pentru orice. Echipamentul face diferența.",
+			"luni":["noiembrie","aprilie", "mai"]
 		},
 		{
-			"fisier":"ski5.png",
-			"descriere":"Prăjitură cu ciocolată",
-			
-			"luni":["noiembrie","aprilie", "decembrie"]
+			"cale_fisier":"echipament4.png",
+			"titlu":"Elite Skier",
+			"alt":"Schior în echipament negru pe vârf de munte cu cer senin",
+			"text_descriere":"Pregătit pentru orice provocare. Echipament complet, stil high-performance.",
+			"luni":["ianuarie","aprilie", "iunie"]
 		},
 		{
-			"fisier":"ski6.png",
-			"descriere":"Tartă cu afine"
+			"cale_fisier":"echipament5.png",
+			"titlu":"Salt printre nori",
+			"alt":"Schior în echipament roșu în aer cu schiurile înclinate",
+			"text_descriere":"Salt perfect și aderență impecabilă – doar cu echipamentele potrivite.",
+			"luni":["septembrie","martie", "decembrie"]
 		},
 		{
-			"fisier":"ski7.png",
-			"descriere":"Tort special"
+			"cale_fisier":"echipament6.png",
+			"titlu":"Momentum",
+			"alt":"Schior în salt spectaculos cu geacă roșie și schiuri personalizate",
+			"text_descriere":"Adrenalină, tehnică și echipament de top. Intră în ritmul iernii.",
+			"luni":["ianuarie","februarie", "mai"]
+		},
+		{
+			"cale_fisier":"schiuri.png",
+			"titlu":"Colecția completă de schiuri",
+			"alt":"Schiuri colorate aliniate vertical într-un spațiu industrial",
+			"text_descriere":"Găsește modelul perfect pentru stilul tău. Echipamente pentru toate gusturile.",
+  			"luni": ["mai", "septembrie", "octombrie", "noiembrie"]
+		},
+		{
+			"cale_fisier":"ski.png",
+			"titlu":"Libertate la Altitudine",
+			"alt":"Schior sărind printre brazi într-un peisaj montan alb",
+			"text_descriere":"Selecție variată de echipamente, testate și pregătite pentru sezon.",
+			"luni":["noiembire","decembrie", "aprilie"]
+		},
+		{
+			"cale_fisier":"snowboard3.png",
+			"titlu":"Extreme",
+			"alt":"Snowboarder executând un salt spectaculos în aer cu zăpadă și soare",
+			"text_descriere":"Control. Forță. Tehnologie. Domină muntele.",
+			"luni":["aprilie"]
+		},
+		{
+			"cale_fisier":"ski2.png",
+			"titlu":"Sincron Perfect",
+			"alt":"Doi schiori în salt sincron, pe fundal albastru clar",
+			"text_descriere":"Distracția e mai intensă împreună. Echipamente pentru experiențe de neuitat.",
+			"luni":["decembrie","iunie", "martie", "aprilie"]
+		},
+		{
+			"cale_fisier":"snowboard2.png",
+			"titlu":"Liniștea Zăpezii",
+			"alt":"Placă de snowboard neagră pe fundal de munte înzăpezit",
+			"text_descriere":"Minimalism pur. Puterea liniștii înainte de coborâre.",
+			"luni":["iulie","februarie", "aprilie"]
+		},
+		{
+			"cale_fisier":"casca.png",
+			"titlu":"Pauza eroilor",
+			"alt":"Cască de schi roșie pe zăpadă proaspătă, lângă schiuri",
+			"text_descriere":"Un moment de respiro. Aventura continuă după o gură de aer curat.",
+			"luni":["mai","februarie"]
+		},
+		{
+			"cale_fisier":"ochelari.png",
+			"titlu":"Focus",
+			"alt":"Sportiv de iarnă echipat complet, privind înainte",
+			"text_descriere":"Totul e pregătit. Nu mai există zgomot. Doar zăpada și instinctul.",
+			"luni":["martie","aprilie"]
+		},
+		{
+			"cale_fisier":"ski6.png",
+			"titlu":"Zborul alb",
+			"alt":"Persoană în salt cu schiurile, surprinsă din unghi jos",
+			"text_descriere":"Nu e nevoie de aripi când ai curaj. Gravitația e doar o sugestie.",
+			"luni":["august","septembrie"]
+		},
+		{
+			"cale_fisier":"ski5.png",
+			"titlu":"Explozie de Libertate",
+			"alt":"Schior în aer, executând un truc pe fundal de munți înzăpeziți",
+			"text_descriere":"Între cer și zăpadă, o singură regulă contează: fii prezent.",
+			"luni":["decembrie","iulie"]
+		},
+		{
+			"cale_fisier":"ski4.png",
+			"titlu":"Control în Haos",
+			"alt":"Schior în salt spectaculos, cu schiurile încrucișate în aer, pe fundal de munți și cer albastru",
+			"text_descriere":"Pentru o secundă, lumea e pe pauză. Doar tu, zăpada și cerul.",
+			"luni":["mai"]
+		},
+		{
+			"cale_fisier":"ski3.png",
+			"titlu":"Printre Pini și Pulbere",
+			"alt":"Schior echipat complet, coborând rapid pe zăpadă afânată, cu pădure de conifere în fundal",
+			"text_descriere":"Natura îți deschide drumul când ai suficient curaj să o urmezi.",
+			"luni":["februarie", "aprilie"]
+		},
+		{
+			"cale_fisier":"echipament7.png",
+			"titlu":"Colorat ca Aventura",
+			"alt":"Snowboarder cu haine strălucitoare în acțiune pe pârtie montană",
+			"text_descriere":"Zăpada e albă. Atitudinea, în mii de culori.",
+			"luni":["ianuarie", "octombrie", "aprilie"]
 		}
 	]
 }

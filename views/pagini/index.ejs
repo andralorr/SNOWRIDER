@@ -17,6 +17,7 @@
         <div class="cover">
             <picture>
                 <img
+                    id="cover-img"
                     sizes="(max-width: 1366px) 100vw, 1366px"
                     srcset="
                     resurse/imagini/cover/cover200px.png 200w,
@@ -27,13 +28,13 @@
 
             <div class="carousel-container">
                 <div class="carousel-slide active">
-                    <img src="resurse/imagini/produse/1.png" alt="Produs 1">
+                    <img src="resurse/imagini/produse/geaca2.png" alt="Produs 1">
                 </div>
                 <div class="carousel-slide prev">
-                    <img src="resurse/imagini/produse/3.png" alt="Produs 3">
+                    <img src="resurse/imagini/produse/clapari-noir.png" alt="Produs 3">
                 </div>
                 <div class="carousel-slide next">
-                    <img src="resurse/imagini/produse/2.png" alt="Produs 2">
+                    <img src="resurse/imagini/produse/geaca1.png" alt="Produs 2">
                 </div>
             
                 <button class="carousel-btn prev">&#10094;</button>
@@ -53,10 +54,10 @@
         <section id="magazin">
             <blockquote>Controlează viteza. Stăpânește terenul. Depășește-ți limitele.</blockquote>
             <div class="gallery">
-                <div class="gallery-item"><img src="resurse/imagini/produse/1.png" alt="Produs 1"><button class="buy-btn">Vezi produsul</button></div>
-                <div class="gallery-item"><img src="resurse/imagini/produse/2.png" alt="Produs 2"><button class="buy-btn">Vezi produsul</button></div>
-                <div class="gallery-item"><img src="resurse/imagini/produse/3.png" alt="Produs 3"><button class="buy-btn">Vezi produsul</button></div>
-                <div class="gallery-item"><img src="resurse/imagini/produse/4.png" alt="Produs 4"><button class="buy-btn">Vezi produsul</button></div>
+                <div class="gallery-item"><img src="resurse/imagini/produse/geaca1.png" alt="Produs 1"><button class="buy-btn">Vezi produsul</button></div>
+                <div class="gallery-item"><img src="resurse/imagini/produse/geaca2.png" alt="Produs 2"><button class="buy-btn">Vezi produsul</button></div>
+                <div class="gallery-item"><img src="resurse/imagini/produse/clapari-noir.png" alt="Produs 3"><button class="buy-btn">Vezi produsul</button></div>
+                <div class="gallery-item"><img src="resurse/imagini/produse/casca.png" alt="Produs 4"><button class="buy-btn">Vezi produsul</button></div>
             </div>
         </section>
 
@@ -86,115 +87,117 @@
               <i class="fas fa-shopping-cart"></i>
             </a>
         </div>
-
-    <div class="home-grid2">
-        <section id="faq">
-            <h2>FAQ</h2>
         
-            <details>
-                <summary>Ce metode de plată acceptați?</summary>
-                <p>Acceptăm plăți online prin Visa/Mastercard și plată la livrare.</p>
-            </details>
-        
-            <details>
-                <summary>Cât durează livrarea?</summary>
-                <p>Livrarea durează între 7-10 zile lucrătoare, în funcție de locația dumneavoastră.</p>
-            </details>
-
-            <!-- bonus embed pdf -->
-            <details>
-                <summary>Se poate face retur?</summary>
-                <p>Da. Vă încurajăm să consultați <a href="resurse/pdf/info_livrare_retur.pdf" download>politica noastră de livrare și retur</a> de mai jos.</p>
-                <embed src="resurse/pdf/info_livrare_retur.pdf" type="application/pdf" width="900" height="500">
-            </details>
-
-            <p>Pentru a te asigura că ești bine echipat pentru temperaturile scăzute, consultă tabelul de mai jos:</p>
-            <div class="table-container">
-                <table>
-                    <caption>Recomandări de echipament pentru sporturile de iarnă în funcție de temperatură</caption>
-                    <thead>
-                         <tr>
-                            <th>Temperatură</th>
-                            <th>Echipament esențial</th>
-                            <th>Stratificare recomandată</th>
-                            <th>Observații importante</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>&lt; -20°C</td>
-                            <td>Geacă de puf extrem, mănuși groase, cască termoizolantă</td>
-                            <td>4 straturi (lenjerie termică, polar, jachetă izolată, strat impermeabil)</td>
-                            <td>Folosiți mască de față și cremă anti-îngheț</td>
-                        </tr>
-                        <tr>
-                            <td>-20°C - -10°C</td>
-                            <td>Geacă ski de calitate, pantaloni termoizolanți, mănuși izolate</td>
-                            <td>3-4 straturi (termic, fleece, strat protector, geacă ski)</td>
-                            <td>Atenție la ger! Vântul puternic necesită protecție suplimentară.</td>
-                        </tr>
-                            <tr>
-                                <td>-10°C - 0°C</td>
-                                <td>Jachetă softshell, mănuși ușoare, strat de bază respirabil</td>
-                                <td>3 straturi (termic, fleece, strat protector)</td>
-                                <td>Evitați supraîncălzirea prin ventilație adecvată.</td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">0°C - 10°C</td>
-                                <td>2 straturi (termic, strat impermeabil)</td>
-                                <td>Folosiți îmbrăcăminte respirabilă și impermeabilă.</td>
-                            </tr>
-                    </tbody>
-                    <tfoot>
-                        <tr>
-                            <td colspan="4">Verificați prognoza meteo și adaptați echipamentul pentru siguranță maximă!</td>
-                        </tr>
-                    </tfoot>
-                </table>
-            </div>    
-            <div class="contact-faq">
-                <p>Ai întrebări suplimentare sau nelămuriri? <a href="/contact"> Contactează-ne!</a></p>
-            </div>
-                    </section>
-
-        <section id="meteo">
-            <h2><strong>IMPORTANT <i class="fa-solid fa-triangle-exclamation fa-beat"></i></strong></h2>
-            <h3>Verifică vremea înainte de a merge pe pârtie!</h3>
-            <p>Prognoza meteo pentru pârtiile din:</p>
-
-            <div class="taburi-iframe">
-                <a href="https://www.meteoblue.com/en/weather/widget/daily/bra%C8%99ov_romania_683844?geoloc=fixed&days=7&tempunit=C&windunit=kmh&precipunit=mm&layout=image" target="ifr-meteo">Brașov</a>
-                <a href="https://www.meteoblue.com/en/weather/widget/daily/predeal_romania_669704?geoloc=fixed&days=7&tempunit=C&windunit=kmh&precipunit=mm&layout=image" target="ifr-meteo">Predeal</a>
-                <a href="https://www.meteoblue.com/en/weather/widget/daily/vatra-dornei_romania_663100?geoloc=fixed&days=7&tempunit=C&windunit=kmh&precipunit=mm&layout=image" target="ifr-meteo">Vatra Dornei</a>
-            </div>
-
-            <iframe name="ifr-meteo" src="https://www.meteoblue.com/en/weather/widget/daily/brașov_romania_683844?geoloc=fixed&days=7&tempunit=C&windunit=kmh&precipunit=mm&layout=image"></iframe>
+        <div class="home-grid2">
+            <section id="faq">
+                <h2>FAQ</h2>
             
-            <p>Verifică mai multe detalii pe <a href="https://www.meteoblue.com/en/weather/week/brașov_romania_683844" target="_blank" rel="noopener noreferrer">MeteoBlue</a>.</p>
+                <details>
+                    <summary>Ce metode de plată acceptați?</summary>
+                    <p>Acceptăm plăți online prin Visa/Mastercard și plată la livrare.</p>
+                </details>
+            
+                <details>
+                    <summary>Cât durează livrarea?</summary>
+                    <p>Livrarea durează între 7-10 zile lucrătoare, în funcție de locația dumneavoastră.</p>
+                </details>
 
-        </section>
-    </div>
+                <!-- bonus embed pdf -->
+                <details>
+                    <summary>Se poate face retur?</summary>
+                    <p>Da. Vă încurajăm să consultați <a href="resurse/pdf/info_livrare_retur.pdf" download>politica noastră de livrare și retur</a> de mai jos.</p>
+                    <embed src="resurse/pdf/info_livrare_retur.pdf" type="application/pdf" width="900" height="500">
+                </details>
 
-    <p id="ip"><b>IP</b><%- locals.ip  %></p>
+                <p>Pentru a te asigura că ești bine echipat pentru temperaturile scăzute, consultă tabelul de mai jos:</p>
+                <div class="table-container">
+                    <table>
+                        <caption>Recomandări de echipament pentru sporturile de iarnă în funcție de temperatură</caption>
+                        <thead>
+                            <tr>
+                                <th>Temperatură</th>
+                                <th>Echipament esențial</th>
+                                <th>Stratificare recomandată</th>
+                                <th>Observații importante</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>&lt; -20°C</td>
+                                <td>Geacă de puf extrem, mănuși groase, cască termoizolantă</td>
+                                <td>4 straturi (lenjerie termică, polar, jachetă izolată, strat impermeabil)</td>
+                                <td>Folosiți mască de față și cremă anti-îngheț</td>
+                            </tr>
+                            <tr>
+                                <td>-20°C - -10°C</td>
+                                <td>Geacă ski de calitate, pantaloni termoizolanți, mănuși izolate</td>
+                                <td>3-4 straturi (termic, fleece, strat protector, geacă ski)</td>
+                                <td>Atenție la ger! Vântul puternic necesită protecție suplimentară.</td>
+                            </tr>
+                                <tr>
+                                    <td>-10°C - 0°C</td>
+                                    <td>Jachetă softshell, mănuși ușoare, strat de bază respirabil</td>
+                                    <td>3 straturi (termic, fleece, strat protector)</td>
+                                    <td>Evitați supraîncălzirea prin ventilație adecvată.</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">0°C - 10°C</td>
+                                    <td>2 straturi (termic, strat impermeabil)</td>
+                                    <td>Folosiți îmbrăcăminte respirabilă și impermeabilă.</td>
+                                </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="4">Verificați prognoza meteo și adaptați echipamentul pentru siguranță maximă!</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>    
+                <div class="contact-faq">
+                    <p>Ai întrebări suplimentare sau nelămuriri? <a href="/contact"> Contactează-ne!</a></p>
+                </div>
+            </section>
 
-    <!-- <section id="digitalcoach">
-            <h2>Tehnologie și inovație în schi</h2>
-            <p>Nu doar echipamentul face diferența pe pârtie. Acum, cu ajutorul unui <strong>Digital Coach</strong>, îți poți îmbunătăți tehnica și performanțele.</p>
-            <p>Urmărește videoclipurile săptămânale și învață cum să-ți perfecționezi controlul, să crești viteza și să cobori cu mai multă siguranță și precizie.</p>
-            <iframe id="videoFrame" width="560" height="315" src="https://www.youtube.com/embed/L8M4REIZVG8" allowfullscreen></iframe>
-            <blockquote><i>Ride de Snow. <br> Own the mountain.</i></blockquote>
-        </section>
-    -->
-    <!-- <section id="calendar">
+            <section id="meteo">
+                <h2><strong>IMPORTANT <i class="fa-solid fa-triangle-exclamation fa-beat"></i></strong></h2>
+                <h3>Verifică vremea înainte de a merge pe pârtie!</h3>
+                <p>Prognoza meteo pentru pârtiile din:</p>
+
+                <div class="taburi-iframe">
+                    <a href="https://www.meteoblue.com/en/weather/widget/daily/bra%C8%99ov_romania_683844?geoloc=fixed&days=7&tempunit=C&windunit=kmh&precipunit=mm&layout=image" target="ifr-meteo">Brașov</a>
+                    <a href="https://www.meteoblue.com/en/weather/widget/daily/predeal_romania_669704?geoloc=fixed&days=7&tempunit=C&windunit=kmh&precipunit=mm&layout=image" target="ifr-meteo">Predeal</a>
+                    <a href="https://www.meteoblue.com/en/weather/widget/daily/vatra-dornei_romania_663100?geoloc=fixed&days=7&tempunit=C&windunit=kmh&precipunit=mm&layout=image" target="ifr-meteo">Vatra Dornei</a>
+                </div>
+
+                <iframe name="ifr-meteo" src="https://www.meteoblue.com/en/weather/widget/daily/brașov_romania_683844?geoloc=fixed&days=7&tempunit=C&windunit=kmh&precipunit=mm&layout=image"></iframe>
+                
+                <p>Verifică mai multe detalii pe <a href="https://www.meteoblue.com/en/weather/week/brașov_romania_683844" target="_blank" rel="noopener noreferrer">MeteoBlue</a>.</p>
+
+            </section>
+        </div>
+
+        <%- include("../fragmente/galerie.ejs") %>
+
+        <p id="ip"><b>IP</b><%- locals.ip  %></p>
+
+        <!-- <section id="digitalcoach">
+                <h2>Tehnologie și inovație în schi</h2>
+                <p>Nu doar echipamentul face diferența pe pârtie. Acum, cu ajutorul unui <strong>Digital Coach</strong>, îți poți îmbunătăți tehnica și performanțele.</p>
+                <p>Urmărește videoclipurile săptămânale și învață cum să-ți perfecționezi controlul, să crești viteza și să cobori cu mai multă siguranță și precizie.</p>
+                <iframe id="videoFrame" width="560" height="315" src="https://www.youtube.com/embed/L8M4REIZVG8" allowfullscreen></iframe>
+                <blockquote><i>Ride de Snow. <br> Own the mountain.</i></blockquote>
+            </section>
+        -->
+        <!-- <section id="calendar">
             <div class="calendar">
                 <h2>Calendar promoții</h2>
                 <iframe src="https://calendar.google.com/calendar/embed?src=your_calendar_id" 
                     style="border: 0" width="100%" height="300" frameborder="0" scrolling="no">
                 </iframe>
             </div>
-    </section> -->
+        </section> -->
         <!-- MathML -->
-    <!-- <section id="formula">
+        <!-- <section id="formula">
             <h2>Formula SnowRider pentru o zi perfectă pe pârtie:</h2>
             <div class="formula">
                 <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -214,19 +217,7 @@
             Vine din potrivirea exactă între tine și echipamentul tău.</p>
             <p><strong>Confortul? Îl ridicăm la puterea a treia.</strong></p>
             <picture><img src="resurse/imagini/imagine_formula.png"></picture>
-    </section> -->
-
-        <!-- <section id = "galerie-statica">
-            <h2>Galerie</h2>
-            <div id = "grid-galerie">
-                <%for(let imag of locals.imagini){ %>
-                    <picture>
-                            <source srcset = "<%- imag.fisier_mediu %>" media = "screen and (max-width: 1000px)" />
-                            <img src = "<%- imag.fisier %>" alt = "ski">
-                    </picture>
-                <% } %>
-            </div>
-        </section> -->
+        </section> -->
 
     </main>
 

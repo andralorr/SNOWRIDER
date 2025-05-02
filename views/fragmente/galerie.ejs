@@ -1,0 +1,42 @@
+<section id="galerie-statica">
+    <h2>Galerie</h2>
+    <h3>Adrenalină, tehnică și echipament de top. Intră în universul SNOWRIDER.</h3>
+    <div id="grid-galerie">
+        <% let pozitie = 0; let indexImg = 0; %>
+        <% while (indexImg < imagini.length && indexImg < 12) { %>
+            <% 
+                let linie = Math.floor(pozitie / 3);
+                let col = pozitie % 3;
+                let afiseaza =
+                    (linie % 2 === 0 && (col === 0 || col === 2)) || // rand par: col 1 si 3
+                    (linie % 2 === 1 && col === 1);                  // rand impar: col 2
+            %>
+            <% if (afiseaza && imagini[indexImg]) { 
+                let imag = imagini[indexImg]; %>
+                <figure>
+                    <picture>
+                        <source srcset="<%= imag.fisier_mic %>" media="(max-width: 600px)">
+                        <source srcset="<%- imag.fisier_mediu %>" media="(max-width: 900px)">
+                        <img 
+                            src="<%- imag.fisier %>" 
+                            alt="<%= imag.alt || imag.cale_fisier %>" 
+                            title="<%= imag.text_descriere %>">
+                    </picture>
+                    <figcaption><%= imag.titlu %></figcaption>
+                    <% if (imag.atribut_licenta) { %>
+                        <small class="licenta_poza">
+                            &copy;
+                            <a href="<%= imag.atribut_licenta.sursa %>" target="_blank">
+                                <%= imag.atribut_licenta.autor %>
+                            </a>
+                        </small>
+                    <% } %>
+                </figure>
+                <% indexImg++; %>
+            <% } else { %>
+                <div class="spatiu-gol"></div>
+            <% } %>
+            <% pozitie++; %>
+        <% } %>
+    </div>
+</section>

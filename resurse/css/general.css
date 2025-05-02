@@ -1,14 +1,3 @@
-:root {
-    --primary-blue: #004AAD;
-    --white: #FFFFFF;
-    --black: #000000;
-    --lightblue: #4B9BC9;
-    --dark-gray: #4C5053;
-    --lightgray: #B3B3B8;
-    --green: #8de88b;
-}
-  
-
 #watermark, #banner-print{
     display:none;
 }
@@ -32,7 +21,7 @@ main {
 
 .top-icons {
     position: absolute;
-    top: 20px;
+    top: 30px;
     right: 20px;
     z-index: 1002;
     display: flex;
@@ -95,31 +84,31 @@ caption {
 }
 
 /* Etapa 4 link-uri */
-a:not(nav a):not(footer a):link {
+body:not(.pagina-produse) a:not(nav a):not(footer a):not(.logo a)link {
     color: var(--black);
 }
 
-a:not(nav a):not(footer a):visited {
+body:not(.pagina-produse) a:not(nav a):not(footer a):not(.logo a) visited {
     color: var(--primary-blue);
 }
 
-a[href^="mailto"]:not(nav a):not(footer a)::before,
-a[href^="tel"]:not(nav a):not(footer a)::before,
-a[href^="http"]:not(nav a):not(footer a)::before {
+body:not(.pagina-produse) a[href^="mailto"]:not(nav a):not(footer a)::before,
+body:not(.pagina-produse) a[href^="tel"]:not(nav a):not(footer a)::before,
+body:not(.pagina-produse) a[href^="http"]:not(nav a):not(footer a)::before {
     content: "⮳";
     color: var(--black);
     transition: color 0.3s ease;
     text-decoration: none;
 }
 
-a[href^="mailto"]:not(nav a):not(footer a):hover::before,
-a[href^="tel"]:not(nav a):not(footer a):hover::before,
-a[href^="http"]:not(nav a):not(footer a):hover::before {
+body:not(.pagina-produse) a[href^="mailto"]:not(nav a):not(footer a):hover::before,
+body:not(.pagina-produse) a[href^="tel"]:not(nav a):not(footer a):hover::before,
+body:not(.pagina-produse) a[href^="http"]:not(nav a):not(footer a):hover::before {
     color: var(--green);
 }
 
 /* pata de culoare la link-uri interne doar la hover */
-a[href^="/"]:not(nav a):not(footer a):not(.top-icons a) {
+body:not(.pagina-produse) a[href^="/"]:not(nav a):not(footer a):not(.top-icons a):not(.logo a) {
     position: relative;
     display: inline-block;
     background-image: radial-gradient(var(--lightblue) 0%, var(--lightblue) 40%, transparent 80%, transparent 100%);
@@ -129,21 +118,23 @@ a[href^="/"]:not(nav a):not(footer a):not(.top-icons a) {
     transition: background-size 0.4s ease;
 }
 
-a[href^="/"]:not(nav a):not(footer a):not(.top-icons a):hover {
+body:not(.pagina-produse) a[href^="/"]:not(nav a):not(footer a):not(.top-icons a):not(.logo a):hover {
     background-size: 120%;
 }
 
-/*chenar la click*/
-a[href^="/"]:not(nav a):not(footer a):not(.top-icons a):active {
+/* chenar la click */
+body:not(.pagina-produse) a[href^="/"]:not(nav a):not(footer a):not(.top-icons a):not(.logo a):active {
     outline: 2px solid var(--black);
     outline-offset: 2px;
 }
 
 
+
 @media screen and (max-width: 768px){
     .top-icons {
-        left: 20px;
+        left: 75px;
         right: auto;
+        top: 17px;
     }
 }
 

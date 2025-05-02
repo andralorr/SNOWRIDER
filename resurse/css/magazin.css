@@ -45,3 +45,9 @@
 .buy-btn:hover {
     background-color: var(--primary-blue);
 }
+
+@media screen and (max-width: 1024px){
+    .buy-btn {
+        margin-left: 60px;
+    }
+}

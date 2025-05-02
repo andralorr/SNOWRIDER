@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <title>snowrider.com</title>
+    <meta name="keywords" content="ski, snowboard, zăpadă, iarnă, echipamente de iarnă, geacă,
+                                 pantaloni ski, accesorii ski, ochelari snowboard, mănuși de ski, sporturi de iarnă">
+    <meta name="description" content="Ski. Snowboard. Echipamente sporturi de iarnă.">
+
+    <%- include("../fragmente/head.ejs") %>
+</head>
+
+<body id="produse" class="pagina-produse">
+
+    <%- include("../fragmente/header.ejs") %>
+
+    <main id="pagina-produse">
+        <h1>Produse</h1>
+
+        <div class="container-fluid container-produse mt-4">
+            <div class="row">
+                <div class="col-12 col-lg-2 mb-4">                                        
+                    <section id="sectiune-filtre">
+                        <h3 class="mb-4">Adaugă filtre</h3>
+                    
+                        <div class="row">
+                            <div class="col-12">
+                            <div class="mb-3">
+                                <label for="inp-nume" class="form-label">Nume produs:</label>
+                                <input type="text" id="inp-nume" class="form-control" autocomplete="off">
+                            </div>
+                    
+                            <div class="mb-3">
+                                <label for="inp-greutate" class="form-label">Greutate maximă:</label>
+                                <input type="range" id="inp-greutate" class="form-range" value="0" min="0" max="10" step="0.5">
+                                <span id="infoGreutate" class="form-text">(0)</span>
+                            </div>
+                    
+                            <div class="mb-3">
+                                <label for="inp-culoare" class="form-label">Culoare:</label>
+                                <input list="culori" id="inp-culoare" class="form-control">
+                                <datalist id="culori">
+                                <option value="alb">
+                                <option value="albastru">
+                                <option value="galben">
+                                <option value="gri">
+                                <option value="mov">
+                                <option value="negru">
+                                <option value="portocaliu">
+                                <option value="roz">
+                                <option value="rosu">
+                                <option value="verde">
+                                </datalist>
+                            </div>
+                    
+                            <div class="mb-3">
+                                <label class="form-label"><b>Livrare gratuită:</b></label>
+                                <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gr_rad" id="rad1" value="da">
+                                <label class="form-check-label" for="rad1">Da</label>
+                                </div>
+                                <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gr_rad" id="rad2" value="nu">
+                                <label class="form-check-label" for="rad2">Nu</label>
+                                </div>
+                                <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gr_rad" id="rad3" value="toate" checked>
+                                <label class="form-check-label" for="rad3">Toate</label>
+                                </div>
+                            </div>
+                    
+                            <div class="mb-3">
+                                <label class="form-label"><b>Gen:</b></label>
+                                <div class="btn-group-vertical w-100" role="group" aria-label="Gen">
+                                <input class="btn-check" type="checkbox" name="gen" id="gen-barbati" value="bărbați" autocomplete="off">
+                                <label class="btn btn-outline-primary" for="gen-barbati">Bărbați</label>
+                    
+                                <input class="btn-check" type="checkbox" name="gen" id="gen-femei" value="femei" autocomplete="off">
+                                <label class="btn btn-outline-primary" for="gen-femei">Femei</label>
+                    
+                                <input class="btn-check" type="checkbox" name="gen" id="gen-unisex" value="unisex" autocomplete="off">
+                                <label class="btn btn-outline-primary" for="gen-unisex">Unisex</label>
+                    
+                                <input class="btn-check" type="checkbox" name="gen" id="gen-copii" value="copii" autocomplete="off">
+                                <label class="btn btn-outline-primary" for="gen-copii">Copii</label>
+                                </div>
+                            </div>
+                    
+                            <div class="mb-3">
+                                <label for="inp-tara-origine" class="form-label">Țara de origine</label>
+                                <textarea class="form-control" id="inp-tara-origine" rows="3" required></textarea>
+                                <div class="invalid-feedback">
+                                Introduceți o țară validă (minim 2 caractere și doar litere)!
+                                </div>
+                            </div>
+                    
+                            <div class="mb-3">
+                                <label for="inp-categorie" class="form-label">Categorie:</label>
+                                <select id="inp-categorie" class="form-select">
+                                <option value="toate" selected>Oricare</option>
+                                <option value="schi_si_clapari">Schi & Clăpari</option>
+                                <option value="snowboard_si_boots">Snowboard & Boots</option>
+                                <option value="imbracaminte_tehnica">Îmbrăcăminte Tehnică</option>
+                                <option value="accesorii">Accesorii</option>
+                                </select>
+                            </div>
+                    
+                            <div class="mb-3">
+                                <label for="inp-materiale" class="form-label">Materiale:</label>
+                                <select id="inp-materiale" class="form-select" multiple>
+                                <option value="carbon">Carbon</option>
+                                <option value="elastan">Elastan</option>
+                                <option value="EVA">EVA</option>
+                                <option value="fibră de carbon">Fibră de carbon</option>
+                                <option value="fibră de sticlă">Fibră de sticlă</option>
+                                <option value="lână">Lână</option>
+                                <option value="lemn">Lemn</option>
+                                <option value="metal">Metal</option>
+                                <option value="nailon">Nailon</option>
+                                <option value="neopren">Neopren</option>
+                                <option value="plastic">Plastic</option>
+                                <option value="plută">Plută</option>
+                                <option value="poliester">Poliester</option>
+                                <option value="poliuretan">Poliuretan</option>
+                                <option value="spumă">Spumă</option>
+                                <option value="sticlă">Sticlă</option>
+                                <option value="teflon">Teflon</option>
+                                <option value="termoreflectiv">Termoreflectiv</option>
+                                <option value="thermolite">Thermolite</option>
+                                </select>
+                            </div>
+                    
+                            <!-- Butoane -->
+                            <div class="d-grid gap-2 d-md-block" id="butoane-actiuni">
+                                <button id="btn-filtrare" class="btn btn-primary me-2 mb-2">
+                                <i class="bi bi-funnel"></i> Filtrează
+                                </button>
+                                <button id="btn-resetare" class="btn btn-outline-primary me-2 mb-2">
+                                <i class="bi bi-arrow-counterclockwise"></i> Resetează
+                                </button>
+                                <button id="sort-asc" class="btn btn-success me-2 mb-2">
+                                <i class="bi bi-sort-alpha-up"></i> Ascendent
+                                </button>
+                                <button id="sort-desc" class="btn btn-success me-2 mb-2">
+                                <i class="bi bi-sort-alpha-down"></i> Descendent
+                                </button>
+                                <button id="calculeaza" class="btn btn-info mb-2">
+                                <i class="bi bi-bar-chart-line"></i> Media
+                                </button>
+                            </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                      
+                <div class="col-12 col-lg-10">
+                    <section id="produse">
+                        <div class="grid-produse">
+                            <% for (let prod of produse) { %>
+                                <article class="produs <%= prod.categorie %>" 
+                                    id="elem_<%= prod.id %>" 
+                                    data-nume="<%= prod.nume.toLowerCase() %>" 
+                                    data-pret="<%= prod.pret %>" 
+                                    data-greutate="<%= prod.greutate %>"
+                                    data-culoare="<%= prod.culoare.toLowerCase() %>"
+                                    data-gen="<%= prod.gen.toLowerCase() %>"
+                                    data-materiale="<%= prod.materiale.map(m => m.toLowerCase()).join(',') %>"
+                                    data-livrare="<%= prod.livrare_gratuita ? 'da' : 'nu' %>"
+                                    data-categorie="<%= prod.categorie.toLowerCase() %>"
+                                    data-tara="<%= (prod.tara_origine || '').toLowerCase() %>">
+                                    <h3><a href="/produs/<%= prod.id %>"><span class="val-nume"><%= prod.nume %></span></a></h3>
+                            
+                                    <div class="continut-produs">
+                                        <table>
+                                            <tr>
+                                                <td>Preț</td>
+                                                <td><span class="val-pret"><%= prod.pret %></span> RON</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Greutate</td>
+                                                <td><span class="val-greutate"><%= prod.greutate %></span> kg</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Culoare</td>
+                                                <td><span class="val-culoare"><%= prod.culoare %></span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Gen</td>
+                                                <td><span class="val-gen"><%= prod.gen %></span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Materiale</td>
+                                                <td><span class="val-materiale"><%= prod.materiale.join(", ") %></span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Data adăugării</td>
+                                                <td>
+                                                    <time datetime="<%= prod.data_adaugare.toISOString() %>">
+                                                        <%= (new Date(prod.data_adaugare)).toLocaleDateString('ro-RO', { day: 'numeric', month: 'long', year: 'numeric' }) %>
+                                                        (<%= (new Date(prod.data_adaugare)).toLocaleDateString('ro-RO', { weekday: 'long' }) %>)
+                                                    </time>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Livrare gratuită</td>
+                                                <td><span class="val-livrare"><%= prod.livrare_gratuita ? "da" : "nu" %></span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Țara de origine</td>
+                                                <td><span class="val-tara"><%= prod.tara_origine || "-" %></span></td>
+                                            </tr>
+                                        </table>
+                            
+                                        <figure>
+                                            <a href="/produs/<%= prod.id %>">
+                                                <img src="/resurse/imagini/produse/<%= prod.imagine %>" alt="Imagine <%= prod.nume %>">
+                                            </a>
+                                        </figure>
+                                    </div>
+                            
+                                    <p><%= prod.descriere %></p>
+                                    <p class="categorie-afisata">Categorie: <%= prod.categorie.replaceAll("_", " ") %></p>
+                                </article>
+                            <% } %>                
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="resurse/js/produse.js"></script>
+    <%- include("../fragmente/footer.ejs") %>
+</body>
+</html>

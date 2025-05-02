@@ -18,9 +18,10 @@
     <link rel="manifest" href="./resurse/imagini/favicon/site.webmanifest">
     <link rel="stylesheet" href="./resurse/css/general.css"> 
     <link rel="stylesheet" href="./resurse/css/header.css">
-    <link rel="stylesheet" href="./resurse/css/nav.css">
+    <link rel="stylesheet" href="./resurse/scss/nav.css">
     <link rel="stylesheet" href="./resurse/css/footer.css">
     <link rel="stylesheet" href="./resurse/css/carusel.css">
+    <link rel="stylesheet" href="./resurse/css/printare.css">
 </head>
 
 <body id="top" style="
@@ -37,28 +38,31 @@
     </header>
 
     <nav>
-        <label id="hamburger" for="ch-menu">
-            <img src="resurse/imagini/hamburger.png" alt="menu">
-        </label>
-        
         <input id="ch-menu" type="checkbox">
-
+        <label id="hamburger" for="ch-menu">
+            <div class="burger-lines">
+                <span class="line1"></span>
+                <span class="line2"></span>
+                <span class="line3"></span>
+            </div>
+        </label>          
+    
         <ul class="meniu">
             <li>
                 <a class="text-icon" id="acasa" href="#acasa">Acasă</a>
                 <div class="imag-icon"><span class="fas fa-regular fa-house-user"></span></div>
             </li>
         
-            <li>
-                <a class="text-icon" href="#desprenoi">Despre noi</a>
+            <li class="has-submenu">
+                <a class="text-icon">Despre noi</a>
                 <ul>
                     <li><a href="#cine-suntem">Cine suntem?</a></li>
                     <li><a href="#misiune">Misiunea noastră</a></li>
                 </ul>
             </li>
 
-            <li>
-                <a class="text-icon" href="#magazin">Magazin</a>
+            <li class="has-submenu">
+                <a class="text-icon">Magazin</a>
                 <ul>
                     <li><a href="#schi">Schiuri & Clăpari</a></li>
                     <li><a href="#snowboard">Snowboard & Boots</a></li>
@@ -343,12 +347,13 @@
                 <p>Noi credem că performanța nu vine doar din viteză sau tehnică.<br>
                 Vine din potrivirea exactă între tine și echipamentul tău.</p>
                 <p><strong>Confortul? Îl ridicăm la puterea a treia.</strong></p>
-                <img src="resurse/imagini/imagine_formula.png">
+                <picture><img src="resurse/imagini/imagine_formula.png"></picture>
             </section>
         </div>
     </main>
 
     <footer>
+        <p id="banner-print">Acesta este un proiect școlar!</p>
         <a href="index.html" id="link-top">
             <span id="triunghi">&#5123;</span>
             <span class="tooltip">Mergi la începutul paginii</span>
@@ -400,6 +405,6 @@
             </p>
         </div>
     </footer>
-    <!-- <div class="watermark">Capotă Andra-Lorena</div> -->
+    <p id="watermark"></div>
 </body>
 </html>

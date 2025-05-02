@@ -1,0 +1,161 @@
+@use '../../node_modules/bootstrap/scss/bootstrap.scss' as * with (
+  $primary: #004AAD,
+  $secondary: #FFFFFF,
+
+  $body-color: black,
+  $btn-color: #8de88b,
+
+  $grid-breakpoints: (
+    xs: 0,
+    sm: 480px,
+    md: 768px,
+    lg: 960px,
+    xl: 1280px,
+    xxl: 1440px
+  ),
+
+  $border-radius: .375rem,   
+  $border-width: 2px,
+
+  $font-size-base: 1rem,
+
+  $h1-font-size: 1.8rem,
+  $h2-font-size: 1.5rem,
+  $h3-font-size: 1.25rem,
+  $h4-font-size: 1.1rem,
+  $h5-font-size: 1rem,
+  $h6-font-size: 1rem,
+
+  $font-family-sans-serif: 'Oswald',
+
+  $btn-padding-x: 4rem,
+  $link-color: black,
+  $link-hover-color: #004AAD,
+
+  $form-range-thumb-width: 1.5rem,
+  $form-range-thumb-height: 1.5rem,
+  $form-range-thumb-bg: #004AAD,
+  $form-range-track-bg: #B3B3B8,
+);
+
+:root {
+  --primary-blue: #004AAD;
+  --white: #FFFFFF;
+  --black: #000000;
+  --lightblue: #4B9BC9;
+  --dark-gray: #4C5053;
+  --lightgray: #B3B3B8;
+  --green: #8de88b;
+}
+
+hr {
+  opacity: 1;
+}
+
+.btn {
+  border-radius: $border-radius;
+  border-width: $border-width; 
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &.btn-primary {
+    background-color: $primary;
+    border-color: $primary;
+  }
+
+  i {
+    margin-right: 8px;  
+  }
+
+  @media screen and (max-width: 768px){
+    span {
+      display: none;
+    }
+  }
+
+}
+
+.input-group .form-control {
+  border-radius: $border-radius;
+  border-width: $border-width;
+  padding: 0.5rem 1rem;
+}
+
+body[data-theme="dark"] {
+  background-color: #1a1a1a;
+  color: #f8f9fa;
+
+  .form-control,
+  .form-select,
+  .form-check-input,
+  .btn,
+  label {
+    background-color: transparent;
+    color: #f8f9fa;
+    border-color: #555;
+  }
+
+  .form-select {
+    background-color: #1a1a1a;
+  }
+
+  nav ul{
+    background-color: transparent;
+  }
+  nav ul ul {
+    background-color: #1a1a1a;
+    
+    a {
+      color: #fff;
+    }
+  }
+
+  nav .text-icon {
+    color: #FFFFFF;
+  }
+
+  ul.meniu > li > a {
+    color: white;
+  }
+
+  #hamburger .burger-lines span{
+    background-color: white;
+  }
+
+  .top-icons i {
+    color: #aad8ff;
+  }
+
+  a {
+    color: #aad8ff;
+  }
+
+  .top-bar a {
+    color: white;
+  }
+
+  table td {
+    background-color: #1a1a1a; 
+  }
+
+  #produse article.produs {
+    background-color: #555;
+
+    .val-nume {
+      color: #aad8ff;
+    }
+
+    .categorie-afisata {
+      color: #aad8ff;
+    }
+  }
+
+  #infoGreutate {
+    color: white;
+  }
+}
+
+

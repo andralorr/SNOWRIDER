@@ -18,8 +18,6 @@
     flex-direction: column;
     justify-content: space-between;
     cursor: pointer;
-    padding: 4px 0;
-
     span {
       display: block;
       height: 4px;
@@ -44,7 +42,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 20px;
     position: relative;
     z-index: 1001;
 }
@@ -144,7 +142,7 @@ ul.meniu {
           }
   
           &::after {
-            right: 12px;
+            right: 2px;
           }
   
           &:hover::before,
@@ -173,7 +171,7 @@ ul.meniu {
             }
 
             li::after {
-                right: 10px;
+                right: 2px;
             }
         }
     }
@@ -194,7 +192,6 @@ $bar-delay-step: 400ms;
   }
   100% {
     transform: translateX(0) scaleX(1);
-    background-color: var(--black);
     opacity: 1;
   }
 }

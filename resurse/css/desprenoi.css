@@ -2,13 +2,30 @@
     padding: 40px;
 }
 
+#desprenoi #figure-desprenoi {
+  text-align: center;
+  margin: 2rem auto;
+}
+
+#desprenoi #figure-desprenoi img {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+#desprenoi #figure-desprenoi figcaption {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  color: #555;
+}
+
 video {
     width: 100%;
     min-width: 300px;
-    max-width: 600px;
+    max-width: 500px;
     height: auto;
     display: block;
-    margin: 2em auto;
+    margin: 1em auto;
 }
 
 /* Stilizare subtitrari */
@@ -17,4 +34,116 @@ video {
     color: var(--white);
     text-align: left;
     font-size: 0.5em;
+}
+
+.container-duotone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.duotone-img {
+    width: 500px;
+    height: 500px;
+    background-image: url("/resurse/imagini/galerie/echipament.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    cursor: pointer;
+    transition: all 2s linear;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+  
+.duotone-img::before,
+.duotone-img::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transition: transform 2s ease-in-out;
+}
+  
+  /* culoarea 1 vine din stanga*/
+.duotone-img::before {
+    background-color: blue;
+    transform: translateX(-100%);
+    mix-blend-mode: darken;
+}
+  
+  /* culoarea 2 vine din dreapta */
+.duotone-img::after {
+    background-color: red;
+    transform: translateX(100%);
+    mix-blend-mode: lighten;
+}
+  
+.duotone-img:hover::before {
+    transform: translateX(0);
+}
+  
+.duotone-img:hover::after {
+    transform: translateX(0);
+}
+
+.reflexie-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: transform 2s ease-in-out;
+}
+
+.text-original {
+  transform: rotate(-20deg) skew(-20deg);
+}
+
+.text-reflectat {
+    transform: rotate(20deg) skew(20deg) scaleX(-1) translate(-110px,-18px);
+    transform-origin: left;
+}
+
+.text-original,
+.text-reflectat {
+  transition: color 2s;
+}
+
+.reflexie-container:hover .text-original,
+.reflexie-container:hover .text-reflectat {
+  color: var(--lightblue)
+}
+
+.linie-gradient {
+    border: none;
+    height: 15px;
+    margin: 10px 0;
+    background-image: 
+      repeating-linear-gradient(to right, 
+        var(--primary-blue) 0%, var(--primary-blue) 40%, transparent 40%, transparent 100%
+      ),
+      repeating-linear-gradient(to right, 
+        var(--lightblue) 0%, var(--lightblue) 40%, transparent 40%, transparent 100%
+      ),
+      repeating-linear-gradient(to right, 
+        var(--black) 0%, var(--black) 40%, transparent 40%, transparent 100%
+      );
+    background-size: 4% 4px;
+    background-repeat: repeat-x;
+    background-position: 1px 0px, 5px 5px, 0px 10px;
+}
+
+@media screen and (max-width: 1024px){
+    .text-reflectat {
+        transform: rotate(20deg) skew(20deg) scaleX(-1) translate(-100px,-15px);
+    }
+}
+
+@media screen and (max-width: 768px){
+    .text-reflectat {
+        transform: rotate(20deg) skew(20deg) scaleX(-1) translate(-85px,-15px);
+    }
 }

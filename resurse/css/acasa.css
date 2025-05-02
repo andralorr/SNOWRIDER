@@ -152,6 +152,7 @@ details embed {
 #ip {
     margin-left: 50px;
 }
+  
 @media screen and (max-width: 1300px) {
     .slogan-wrapper {
         bottom: 200px;
@@ -194,6 +195,10 @@ details embed {
         padding: 8px 16px;
         border-radius: 8px 8px 0 0;
     }
+
+    .spatiu-gol {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -209,6 +214,10 @@ details embed {
     .slogan2-cover {
         font-size: 0.9rem;
     }
+
+    .spatiu-gol {
+        display: none;
+    }
 }
 
 @media screen and (max-width:800px){
@@ -221,7 +230,7 @@ details embed {
     }
 
     .slogan-wrapper {
-        bottom: 340px;
+        bottom: 300px;
         left: 20px;
     }
 
@@ -250,8 +259,8 @@ details embed {
     }
 
     img {
-        margin-top: 90px;
-        margin-bottom: 0;
+        margin-top: 80px;
+        margin-bottom: 10px;
     }
 
     .table-container table {
@@ -271,5 +280,9 @@ details embed {
 
     iframe {
         height: 150px;
+    }
+
+    .spatiu-gol {
+        display: none;
     }
 }
