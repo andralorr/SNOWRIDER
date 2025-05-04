@@ -11834,10 +11834,6 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-p {
-  margin-bottom: 0;
-}
-
 :root {
   --primary-blue: #004AAD;
   --white: #FFFFFF;

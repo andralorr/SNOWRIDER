@@ -1,4 +1,4 @@
-window.onload= function(){
+window.onload= function(){ 
     document.getElementById("inp-greutate").oninput = function() {
         document.getElementById("infoGreutate").textContent = `(${this.value})`;
     }
@@ -48,9 +48,9 @@ window.onload= function(){
 
             let categorie = prod.classList[1].toLowerCase(); 
             let cond7 = (inpCategorie === "toate" || categorie === inpCategorie);
-
+            
             let materialeProd = prod.dataset.materiale.split(',').map(m => normalize(m));
-            let cond8 = (materialeSelectate.length === 0 || materialeSelectate.every(mat => materialeProd.includes(mat)));
+            let cond8 = (materialeSelectate.length === 0 || materialeSelectate.some(mat => materialeProd.includes(mat)));
             
             if (cond1 && cond2 && cond3 && cond4 && cond5 && cond6 && cond7 && cond8) {
                 prod.style.display = "block";
