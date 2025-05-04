@@ -35,7 +35,7 @@
   $form-range-thumb-width: 1.5rem,
   $form-range-thumb-height: 1.5rem,
   $form-range-thumb-bg: #004AAD,
-  $form-range-track-bg: #B3B3B8,
+  $form-range-track-bg: #B3B3B8
 );
 
 :root {
@@ -155,6 +155,16 @@ body[data-theme="dark"] {
 
   #infoGreutate {
     color: white;
+  }
+
+  @media screen and (max-width: 768px){
+    nav ul{
+      background-color: #1a1a1a;
+    }
+
+    ul.meniu li div.imag-icon{
+      color: white;
+    }
   }
 }
 

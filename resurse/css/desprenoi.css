@@ -4,13 +4,13 @@
 
 #desprenoi #figure-desprenoi {
   text-align: center;
-  margin: 2rem auto;
 }
 
 #desprenoi #figure-desprenoi img {
   max-width: 100%;
   height: auto;
   display: inline-block;
+  margin-top: 20px;
 }
 
 #desprenoi #figure-desprenoi figcaption {
@@ -145,5 +145,14 @@ video {
 @media screen and (max-width: 768px){
     .text-reflectat {
         transform: rotate(20deg) skew(20deg) scaleX(-1) translate(-85px,-15px);
+    }
+
+    #desprenoi #figure-desprenoi img {
+      margin-top: 10px;
+    }
+
+    #desprenoi h2 {
+      margin-bottom: 30px;
+      margin-top: 20px;
     }
 }

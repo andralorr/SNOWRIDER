@@ -73,7 +73,7 @@ ul.meniu {
         padding: 10px;
       }
   
-      div.imag-icon {
+      a.imag-icon {
         display: none;
       }
 
@@ -283,7 +283,7 @@ $bar-delay-step: 400ms;
                 display: block;
             }
 
-            div.imag-icon {
+            a.imag-icon {
                 display: block;
                 text-align: center;
                 color: var(--black);

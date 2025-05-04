@@ -11834,6 +11834,10 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+p {
+  margin-bottom: 0;
+}
+
 :root {
   --primary-blue: #004AAD;
   --white: #FFFFFF;
@@ -11933,4 +11937,12 @@ body[data-theme=dark] #produse article.produs .categorie-afisata {
 }
 body[data-theme=dark] #infoGreutate {
   color: white;
+}
+@media screen and (max-width: 768px) {
+  body[data-theme=dark] nav ul {
+    background-color: #1a1a1a;
+  }
+  body[data-theme=dark] ul.meniu li div.imag-icon {
+    color: white;
+  }
 }

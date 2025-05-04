@@ -104,5 +104,9 @@ main#pagina-produse{
         min-width: auto;
         max-width: 100%;
     }
+
+    #pagina-produse h1 {
+        margin-top: 20px;
+    }
 }
 
