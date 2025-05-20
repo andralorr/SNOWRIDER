@@ -11934,6 +11934,67 @@ body[data-theme=dark] #produse article.produs .categorie-afisata {
 body[data-theme=dark] #infoGreutate {
   color: white;
 }
+body[data-theme=dark] #produs-modal .modal-content {
+  background-color: #1a1a1a;
+  color: #f8f9fa;
+  border-color: #aad8ff;
+}
+body[data-theme=dark] #produs-modal .modal-close {
+  color: #aad8ff;
+}
+body[data-theme=dark] #produs-modal .modal-close:hover {
+  color: red;
+}
+body[data-theme=dark] .container-prod {
+  background-color: #1a1a1a;
+}
+body[data-theme=dark] .container-prod h1 {
+  color: #aad8ff;
+}
+body[data-theme=dark] .container-prod .detalii {
+  color: whitesmoke;
+}
+body[data-theme=dark] .container-prod .detalii p strong {
+  color: #aad8ff;
+}
+body[data-theme=dark] .container-prod .btn-inapoi {
+  background-color: #555;
+  color: whitesmoke;
+}
+body[data-theme=dark] .container-prod .btn-inapoi:hover {
+  background-color: #aad8ff;
+  color: #000000;
+}
+body[data-theme=dark] .container-prod .seturi-din-care-face-parte .card-set {
+  background-color: #555;
+}
+body[data-theme=dark] .container-prod .seturi-din-care-face-parte .card-set h3 {
+  color: #aad8ff;
+}
+body[data-theme=dark] .container-prod .seturi-din-care-face-parte .pret-set {
+  color: whitesmoke;
+}
+body[data-theme=dark] .container-prod .seturi-din-care-face-parte .item-produs {
+  background-color: #B3B3B8;
+}
+body[data-theme=dark] .pagina-seturi h1, body[data-theme=dark] .pagina-seturi .card-set h2 {
+  color: #aad8ff;
+}
+body[data-theme=dark] .pagina-seturi .card-set {
+  background-color: #4C5053;
+}
+body[data-theme=dark] .pagina-seturi .item-produs {
+  background-color: #B3B3B8;
+}
+body[data-theme=dark] .pagina-seturi .item-produs a {
+  color: #2c3e50;
+}
+body[data-theme=dark] .pagina-seturi .item-produs:hover {
+  background: rgb(222, 222, 232);
+}
+body[data-theme=dark] .pagina-seturi .card-set .descriere, body[data-theme=dark] .pagina-seturi .pret-set {
+  color: whitesmoke;
+}
 @media screen and (max-width: 768px) {
   body[data-theme=dark] nav ul {
     background-color: #1a1a1a;

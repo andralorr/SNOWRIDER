@@ -157,6 +157,85 @@ body[data-theme="dark"] {
     color: white;
   }
 
+  #produs-modal .modal-content {
+      background-color: #1a1a1a;
+      color: #f8f9fa;
+      border-color: #aad8ff;
+  }
+
+  #produs-modal .modal-close {
+    color: #aad8ff;
+
+    &:hover {
+      color: red;
+    }
+  }
+
+  .container-prod {
+    background-color: #1a1a1a; 
+    h1 {
+      color: #aad8ff;
+    }
+
+    .detalii {
+      color: whitesmoke;
+      p strong {
+        color: #aad8ff;
+      }
+    }
+
+    .btn-inapoi {
+      background-color: #555;
+      color: whitesmoke;
+
+      &:hover {
+        background-color: #aad8ff;
+        color: #000000;
+      }
+    }
+
+    .seturi-din-care-face-parte {
+      .card-set{
+        background-color: #555;
+      }
+      .card-set h3 {
+        color: #aad8ff;
+      }    
+      .pret-set {
+        color: whitesmoke;
+      }
+      .item-produs{
+        background-color: #B3B3B8;
+      }
+    }
+  }
+
+  .pagina-seturi {
+    h1, .card-set h2 {
+      color: #aad8ff;
+    }
+
+    .card-set{
+      background-color: #4C5053;
+    }
+
+    .item-produs {
+      background-color: #B3B3B8;
+
+      a {
+        color: #2c3e50;
+      }
+
+      &:hover{
+        background: rgb(222, 222, 232);
+      }
+    }
+
+    .card-set .descriere, .pret-set{
+      color: whitesmoke;
+    }
+  }
+
   @media screen and (max-width: 768px){
     nav ul{
       background-color: #1a1a1a;

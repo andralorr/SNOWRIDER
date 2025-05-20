@@ -1,0 +1,132 @@
+.container-prod {
+    max-width: 1000px;
+    margin: 2rem auto;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+  
+.container-prod h1 {
+    font-size: 2.5rem;
+    color: var(--primary-blue);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+  
+.produs-img {
+    display: block;
+    max-width: 100%;
+    border-radius: 10px;
+    margin: 0 auto 2rem;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+  
+.detalii {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    padding: 1.5rem;
+    text-align: center; 
+}
+  
+.detalii strong {
+    color: var(--primary-blue);
+}
+  
+.btn-inapoi {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 0.7rem 0.7rem;
+    background: var(--lightgray);
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: 0.3s ease;
+}
+  
+.btn-inapoi:hover {
+    text-decoration: none;
+    color: white;
+}
+
+/* css seturi */
+.seturi-din-care-face-parte {
+    margin-top: 3rem;
+}
+
+.card-set {
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+}
+
+.card-set h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.3rem;
+}
+
+.pret-set {
+    font-size: 1.1rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.lista-produse {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.item-produs {
+    flex: 0 0 150px;
+    background: white;
+    padding: 0.5rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.item-produs:hover {
+    transform: scale(1.03);
+}
+
+.item-produs a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item-produs img {
+    max-width: 100%;
+    max-height: 100px;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
+    border-radius: 4px;
+}
+
+.item-produs span {
+    display: block;
+    font-size: 0.9rem;
+}
+
+.item-produs .pret-produs {
+    font-weight: bold;
+    color: #1e1e1e;
+    margin-top: 0.3rem;
+}
+
+  
+@media (max-width: 768px) {
+    .container-prod {
+      margin: 2rem;
+      padding-top: 6rem;
+    }
+}
+  

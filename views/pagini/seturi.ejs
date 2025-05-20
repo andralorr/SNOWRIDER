@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <title>snowrider.com</title>
+    <meta name="keywords" content="ski, snowboard, zăpadă, iarnă, echipamente de iarnă, geacă,
+                                 pantaloni ski, accesorii ski, ochelari snowboard, mănuși de ski, sporturi de iarnă">
+    <meta name="description" content="Ski. Snowboard. Echipamente sporturi de iarnă.">
+
+    <%- include("../fragmente/head.ejs") %>
+    <link rel="stylesheet" href="/resurse/css/seturi.css">
+</head>
+
+<body>
+    <%- include("../fragmente/header.ejs") %>
+  
+    <main class="pagina-seturi container">
+        <h1>Seturi de produse</h1>
+
+        <% if (seturi.length === 0) { %>
+            <p>Nu există seturi disponibile.</p>
+        <% } %>
+
+        <div class="grid-seturi">
+            <% for (let set of seturi) { %>
+                <div class="card-set">
+                    <h2><%= set.nume_set %></h2>
+                    <p class="descriere"><%= set.descriere_set %></p>
+
+                    <ul class="lista-produse">
+                        <% for (let produs of set.produse) { %>
+                            <li class="item-produs">
+                                <a href="/produs/<%= produs.id %>">
+                                    <img src="/resurse/imagini/produse/<%= produs.imagine %>" alt="Imagine <%= produs.nume %>">
+                                    <span><%= produs.nume %></span>
+                                    <span class="pret-produs"><%= produs.pret %> lei</span>
+                                </a>
+                            </li>
+                        <% } %>
+                    </ul>
+
+                    <p class="pret-set">Preț set: <strong><%= set.pret_final %> lei</strong></p>
+                </div>
+            <% } %>
+        </div>
+    </main>
+  
+    <%- include("../fragmente/footer.ejs") %>
+    
+  </body>
+  </html>

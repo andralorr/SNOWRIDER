@@ -112,3 +112,35 @@ ALTER TABLE produse ADD COLUMN tara_origine VARCHAR(100);
 -- GRANT ALL PRIVILEGES ON DATABASE snowrider TO andra ;
 -- GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO andra;
 -- GRANT ALL PRIVILEGES ON ALL SEQUENCES IN SCHEMA public TO andra;
+
+
+CREATE TABLE seturi (
+    id SERIAL PRIMARY KEY,
+    nume_set TEXT NOT NULL,
+    descriere_set TEXT
+);
+
+CREATE TABLE asociere_set (
+    id_set INTEGER REFERENCES seturi(id) ON DELETE CASCADE,
+    id_produs INTEGER REFERENCES produse(id) ON DELETE CASCADE,
+    PRIMARY KEY (id_set, id_produs)
+);
+
+INSERT INTO seturi (nume_set, descriere_set) VALUES
+('Schi Start', 'Set ideal pentru schiatori: schiuri și clăpari compatibili.'),
+('Vision & Safety', 'Protecție completă pentru ochi și cap.'),
+('Ride Ready', 'Pachet complet pentru snowboarderi.'),
+('Layer Pro', 'Echipament pentru temperaturi scăzute.'),
+('Cold Control Kit', 'Accesorii indispensabile pentru iarnă.');
+('SnowRider Feminine KIT', 'Set ideal pentru aventuri de neuitat.')
+
+
+INSERT INTO asociere_set (id_set, id_produs) VALUES (1, 1), (1, 2);
+INSERT INTO asociere_set (id_set, id_produs) VALUES (2, 18), (2, 19);
+INSERT INTO asociere_set (id_set, id_produs) VALUES (3, 5), (3, 6);
+INSERT INTO asociere_set (id_set, id_produs) VALUES (4, 12), (4, 17);
+INSERT INTO asociere_set (id_set, id_produs) VALUES (5, 19), (5, 20);
+INSERT INTO asociere_set (id_set, id_produs) VALUES (6, 15), (6, 3), (6,2);
+
+GRANT ALL PRIVILEGES ON seturi TO andra;
+GRANT ALL PRIVILEGES ON asociere_set TO andra;

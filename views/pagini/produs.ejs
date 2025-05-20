@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <title>snowrider.com</title>
+    <meta name="keywords" content="ski, snowboard, zăpadă, iarnă, echipamente de iarnă, geacă,
+                                 pantaloni ski, accesorii ski, ochelari snowboard, mănuși de ski, sporturi de iarnă">
+    <meta name="description" content="Ski. Snowboard. Echipamente sporturi de iarnă.">
+
+    <%- include("../fragmente/head.ejs") %>
+</head>
+
+<body>
+    <%- include("../fragmente/header.ejs") %>
+  
+    <main class="container-prod">
+      <h1><%= produs.nume %></h1>
+      <img src="/resurse/imagini/produse/<%= produs.imagine %>" alt="Imagine <%= produs.nume %>" class="produs-img">
+      <div class="detalii">
+        <p><strong>Preț:</strong> <%= produs.pret %> RON</p>
+        <p><strong>Greutate:</strong> <%= produs.greutate %> kg</p>
+        <p><strong>Culoare:</strong> <%= produs.culoare %></p>
+        <p><strong>Descriere:</strong> <%= produs.descriere %></p>
+        <p><strong>Țara de origine:</strong> <%= produs.tara_origine || '-' %></p>
+      </div>
+
+    <% if (seturi && seturi.length > 0) { %>
+          <section class="seturi-din-care-face-parte">
+            <h2>Face parte din următoarele seturi:</h2>
+
+            <% seturi.forEach(set => { %>
+              <div class="card-set">
+                <h3><%= set.nume_set %></h3>
+                <p class="pret-set"><strong>Preț set:</strong> <%= set.pret_final %> lei</p>
+
+                <ul class="lista-produse">
+                  <% set.produse.forEach(p => { %>
+                    <li class="item-produs">
+                      <a href="/produs/<%= p.id %>">
+                        <img src="/resurse/imagini/produse/<%= p.imagine %>" alt="<%= p.nume %>">
+                        <span><%= p.nume %></span>
+                        <span class="pret-produs"><%= p.pret %> lei</span>
+                      </a>
+                    </li>
+                  <% }) %>
+                </ul>
+              </div>
+            <% }) %>
+          </section>
+    <% } %>
+
+    <a href="/produse" class="btn-inapoi">&larr; Înapoi la produse</a>
+    </main>
+  
+    <%- include("../fragmente/footer.ejs") %>
+    
+  </body>
+  </html>

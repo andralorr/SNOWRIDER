@@ -148,7 +148,6 @@
                                 <i class="bi bi-bar-chart-line"></i> Media
                                 </button>
                             </div>
-                            </div>
                         </div>
                     </section>
                 </div>
@@ -167,8 +166,9 @@
                                     data-materiale="<%= prod.materiale.map(m => m.toLowerCase()).join(',') %>"
                                     data-livrare="<%= prod.livrare_gratuita ? 'da' : 'nu' %>"
                                     data-categorie="<%= prod.categorie.toLowerCase() %>"
-                                    data-tara="<%= (prod.tara_origine || '').toLowerCase() %>">
-                                    <h3><a href="/produs/<%= prod.id %>"><span class="val-nume"><%= prod.nume %></span></a></h3>
+                                    data-tara="<%= (prod.tara_origine || '').toLowerCase() %>"
+                                    data-img="<%= prod.imagine %>">
+                                    <h3><span class="val-nume titlu-modal"><%= prod.nume %></span></h3>
                             
                                     <div class="continut-produs">
                                         <table>
@@ -220,15 +220,38 @@
                             
                                     <p><%= prod.descriere %></p>
                                     <p class="categorie-afisata">Categorie: <%= prod.categorie.replaceAll("_", " ") %></p>
+                                    
+                                    <!-- Bonus 6 etapa 6 -->
+                                    <div class="butoane-produse mt-2 text-end">
+                                        <span class="butoane-inline">
+                                            <button class="btn btn-light btn-sm btn-pastreaza" title="Păstrează produsul vizibil permanent">
+                                                <i class="bi bi-pin"></i>
+                                            </button>
+                                            <button class="btn btn-light btn-sm btn-ascunde-temporar" title="Ascunde temporar produsul">
+                                                <i class="bi bi-eye-slash"></i>
+                                            </button>
+                                            <button class="btn btn-light btn-sm btn-ascunde-sesiune" title="Ascunde produsul pentru sesiunea curentă">
+                                                <i class="bi bi-x-circle"></i>
+                                            </button>
+                                        </span>
+                                    </div>
                                 </article>
-                            <% } %>                
+                            <% } %> 
+                            <!-- modal produs -->
+                            <div id="produs-modal" class="modal-overlay hidden">
+                                <div class="modal-content">
+                                    <button class="modal-close">&times;</button>
+                                    <div id="modal-detalii"></div>
+                                </div>
+                            </div>               
                         </div>
                     </section>
                 </div>
             </div>
         </div>
     </main>
-    <script src="resurse/js/produse.js"></script>
+    <script src="/resurse/js/produse.js"></script>
+    <script src="/resurse/js/modal.js"></script>
     <%- include("../fragmente/footer.ejs") %>
 </body>
 </html>

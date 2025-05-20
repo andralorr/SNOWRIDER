@@ -75,7 +75,7 @@
             <picture class="png-home2">
                 <img src="resurse/imagini/home/home2.png" alt="Snowrider">
             </picture>
-        </div>        
+        </div>
           
         <!-- <button type="button" class="btn btn-primary btn-lg">Stil-1-mare</button> -->
 
@@ -87,7 +87,7 @@
               <i class="fas fa-shopping-cart"></i>
             </a>
         </div>
-        
+
         <div class="home-grid2">
             <section id="faq">
                 <h2>FAQ</h2>
@@ -176,6 +176,20 @@
             </section>
         </div>
 
+        <% if (locals.oferta) { %>
+            <section id="anunt-oferta">
+                <div class="oferta-banner">
+                    <h3>NU RATA OFERTA!</h3>
+                    <p>
+                        <strong><%= oferta.reducere %>% reducere</strong> la categoria <strong><%= oferta.categorie %></strong><br>
+                        <span>(valabilitate: <%= (new Date(oferta["data-incepere"])).toLocaleString("ro-RO") %> - <%= (new Date(oferta["data-finalizare"])).toLocaleString("ro-RO") %>)</span><br>
+                        <span id="timer-oferta" data-final="<%= oferta['data-finalizare'] %>">Timp ramas: ...</span>
+                    </p>
+                </div>
+            </section>
+            <script src="/resurse/js/timer.js"></script>
+        <% } %>
+        
         <%- include("../fragmente/galerie.ejs") %>
 
         <p id="ip"><b>IP</b><%- locals.ip  %></p>
