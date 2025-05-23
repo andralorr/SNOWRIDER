@@ -1,3 +1,28 @@
 {
-  "oferte": []
+  "oferte": [
+    {
+      "categorie": "imbracaminte_tehnica",
+      "data-incepere": "2025-05-23T07:42:25.992Z",
+      "data-finalizare": "2025-05-23T07:44:25.992Z",
+      "reducere": 35
+    },
+    {
+      "categorie": "snowboard_si_boots",
+      "data-incepere": "2025-05-23T07:41:42.796Z",
+      "data-finalizare": "2025-05-23T07:43:42.796Z",
+      "reducere": 20
+    },
+    {
+      "categorie": "accesorii",
+      "data-incepere": "2025-05-23T07:39:42.787Z",
+      "data-finalizare": "2025-05-23T07:41:42.787Z",
+      "reducere": 30
+    },
+    {
+      "categorie": "snowboard_si_boots",
+      "data-incepere": "2025-05-23T07:37:42.942Z",
+      "data-finalizare": "2025-05-23T07:39:42.942Z",
+      "reducere": 40
+    }
+  ]
 }

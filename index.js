@@ -303,8 +303,7 @@ app.get("/contact", function(req, res){
 
 app.get("/galerie-foto", function(req, res){
     res.render("pagini/galerie-foto", {
-        imagini: obGlobal.obImagini.imagini,
-        galerieAnimata: obGlobal.galerieAnimata
+        imagini: obGlobal.obImagini.imagini
     });
 });
 

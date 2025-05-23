@@ -88,6 +88,10 @@
     * {
         background-color: transparent !important;
     }
+
+    .carousel-container {
+        display: none;
+    }
 }
 
 @page:left{

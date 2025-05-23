@@ -84,11 +84,11 @@ caption {
 }
 
 /* Etapa 4 link-uri */
-body:not(.pagina-produse) a:not(nav a):not(footer a):not(.logo a)link {
+body:not(.pagina-produse) a:not(nav a):not(footer a):not(.logo a) {
     color: var(--black);
 }
 
-body:not(.pagina-produse) a:not(nav a):not(footer a):not(.logo a) visited {
+body:not(.pagina-produse) a:visited:not(nav a):not(footer a):not(.logo a) {
     color: var(--primary-blue);
 }
 
@@ -107,28 +107,11 @@ body:not(.pagina-produse) a[href^="http"]:not(nav a):not(footer a):hover::before
     color: var(--green);
 }
 
-/* pata de culoare la link-uri interne doar la hover */
-body:not(.pagina-produse) a[href^="/"]:not(nav a):not(footer a):not(.top-icons a):not(.logo a):not(.btn-inapoi):not(.grid-seturi) {
-    position: relative;
-    display: inline-block;
-    background-image: radial-gradient(var(--lightblue) 0%, var(--lightblue) 40%, transparent 80%, transparent 100%);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 0%;
-    transition: background-size 0.4s ease;
-}
-
-body:not(.pagina-produse) a[href^="/"]:not(nav a):not(footer a):not(.top-icons a):not(.logo a):hover {
-    background-size: 120%;
-}
-
 /* chenar la click */
 body:not(.pagina-produse) a[href^="/"]:not(nav a):not(footer a):not(.top-icons a):not(.logo a):active {
     outline: 2px solid var(--black);
     outline-offset: 2px;
 }
-
-
 
 @media screen and (max-width: 768px){
     .top-icons {

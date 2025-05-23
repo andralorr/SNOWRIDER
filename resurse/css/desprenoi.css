@@ -36,6 +36,7 @@ video {
     font-size: 0.5em;
 }
 
+/*duotone*/
 .container-duotone {
     display: flex;
     justify-content: center;
